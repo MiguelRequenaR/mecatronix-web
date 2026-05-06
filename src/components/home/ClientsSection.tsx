@@ -18,7 +18,7 @@ export default function ClientsSection() {
       <h2 className="text-3xl text-primary uppercase font-bold text-center" data-aos="fade-up">
         Clientes
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-10" data-aos="fade-up" data-delay="100">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-10 mx-4 md:mx-0" data-aos="fade-up" data-delay="100">
         {clients.map((client) => (
           <div key={client.id}>
             <img src={client.image} alt={client.name} />

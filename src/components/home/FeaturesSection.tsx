@@ -30,14 +30,14 @@ const features = [
 export default function FeaturesSection() {
   return (
     <section className="max-w-7xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-10 mx-4 md:mx-0">
         {features.map((feature) => (
-          <div key={feature.id} className="flex flex-col items-center justify-center py-20 gap-4">
+          <div key={feature.id} className="flex flex-col items-center justify-center md:py-20 gap-4">
             <div className="bg-[#f5f5f4] rounded-full p-4 text-primary border border-dashed">
               {feature.icon}
             </div>
             <h3 className="text-xl text-primary uppercase font-bold text-center">{feature.title}</h3>
-            <p className="text-gray-600">{feature.description}</p>
+            <p className="text-gray-600 text-center">{feature.description}</p>
           </div>
         ))}
       </div>
