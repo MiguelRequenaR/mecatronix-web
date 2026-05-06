@@ -1,0 +1,32 @@
+const WHATSAPP_PHONE = "51902778456"
+
+export type ContactFormWhatsAppData = {
+  name: string
+  phone: string
+  email: string
+  message: string
+}
+
+export function whatsappMessage(data: ContactFormWhatsAppData): string {
+  const text = [
+    "*Mensaje desde el formulario*",
+    "",
+    `Nombre: ${data.name || "—"}`,
+    `Teléfono: ${data.phone || "—"}`,
+    `Correo: ${data.email || "—"}`,
+    `Mensaje: ${data.message || "—"}`,
+  ].join("\n")
+
+  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(text)}`
+}
+
+export function openContactWhatsApp(form: HTMLFormElement): void {
+  const fd = new FormData(form)
+  const url = whatsappMessage({
+    name: String(fd.get("name") ?? "").trim(),
+    phone: String(fd.get("phone") ?? "").trim(),
+    email: String(fd.get("email") ?? "").trim(),
+    message: String(fd.get("message") ?? "").trim(),
+  })
+  window.open(url, "_blank", "noopener,noreferrer")
+}

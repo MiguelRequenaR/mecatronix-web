@@ -10,8 +10,8 @@ export default function NavBar() {
   const links = [
     { label: "Inicio", to: "/" },
     { label: "Sobre nosotros", to: "/nosotros" },
-    { label: "Servicios", to: "/#servicios" },
-    { label: "Contacto", to: "/#contacto" }
+    { label: "Servicios", to: "/servicios" },
+    { label: "Contacto", to: "/contacto" }
   ];
 
   const isActiveLink = (to: string) => {
