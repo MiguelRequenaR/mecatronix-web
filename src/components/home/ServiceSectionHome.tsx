@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import services from "@/data/service"
 
 export default function ServiceSectionHome() {
@@ -22,9 +24,9 @@ export default function ServiceSectionHome() {
         ))}
       </div>
       <div className="flex justify-center" data-aos="fade-up" data-delay="200">
-        <a
+        <Link
           className="relative overflow-hidden bg-transparent px-6 py-2 uppercase cursor-pointer font-bold border border-primary group transition-colors rounded-full duration-500 hover:text-white text-sm text-primary"
-          href="/servicios"
+          to="/servicios"
         >
           <span
             className="
@@ -40,7 +42,7 @@ export default function ServiceSectionHome() {
           >
             Ver todos los servicios
           </span>
-        </a>
+        </Link>
       </div>
     </section>
   )
