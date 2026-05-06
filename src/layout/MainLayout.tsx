@@ -9,7 +9,7 @@ export default function MainLayout() {
   return (
     <div>
       <NavBar />
-      <main>
+      <main className="pt-15 md:pt-20">
         <Outlet />
       </main>
       <CallToAction />

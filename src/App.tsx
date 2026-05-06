@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { Routes, Route } from "react-router-dom"
 import MainLayout from "@/layout/MainLayout"
+import ScrollToTop from "@/utils/ScrollToTop"
 import HomePage from "@/features/home"
 import AboutPage from "@/features/about"
 import ServicesPage from "@/features/services"
@@ -20,14 +21,17 @@ function App() {
   })
 
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="/nosotros" element={<AboutPage />} />
-        <Route path="/servicios" element={<ServicesPage />} />
-        <Route path="/contacto" element={<ContactPage />} />
-      </Route>
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/nosotros" element={<AboutPage />} />
+          <Route path="/servicios" element={<ServicesPage />} />
+          <Route path="/contacto" element={<ContactPage />} />
+        </Route>
+      </Routes>
+    </>
   )
 }
 
