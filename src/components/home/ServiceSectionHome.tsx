@@ -22,8 +22,9 @@ export default function ServiceSectionHome() {
         ))}
       </div>
       <div className="flex justify-center" data-aos="fade-up" data-delay="200">
-        <button
+        <a
           className="relative overflow-hidden bg-transparent px-6 py-2 uppercase cursor-pointer font-bold border border-primary group transition-colors rounded-full duration-500 hover:text-white text-sm text-primary"
+          href="/servicios"
         >
           <span
             className="
@@ -39,7 +40,7 @@ export default function ServiceSectionHome() {
           >
             Ver todos los servicios
           </span>
-        </button>
+        </a>
       </div>
     </section>
   )
