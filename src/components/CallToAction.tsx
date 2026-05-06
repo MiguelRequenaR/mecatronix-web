@@ -8,7 +8,7 @@ export default function CallToAction() {
       }}
     >
       <div className="absolute inset-0 bg-black opacity-70"></div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 z-10" data-aos="zoom-in" data-delay="100">
         <div className="text-center md:text-left space-y-4">
           <h2 className="text-4xl text-white font-bold uppercase">
             Inicia tu proyecto hoy

@@ -15,10 +15,10 @@ const clients = [
 export default function ClientsSection() {
   return (
     <section className="max-w-7xl mx-auto py-20">
-      <h2 className="text-3xl text-primary uppercase font-bold text-center">
+      <h2 className="text-3xl text-primary uppercase font-bold text-center" data-aos="fade-up">
         Clientes
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-10" data-aos="fade-up" data-delay="100">
         {clients.map((client) => (
           <div key={client.id}>
             <img src={client.image} alt={client.name} />

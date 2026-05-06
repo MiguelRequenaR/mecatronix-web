@@ -1,35 +1,30 @@
-"use client"
 import { useEffect, useState } from "react"
 import { ArrowRight, ArrowLeft } from "lucide-react"
 
 const carouselImages = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1576446470246-499c738d1c8e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Servicios Eléctricos \nIntegrales",
-    description: "Soluciones integrales en alta y baja tensión para hogares y empresas.",
-    buttonLink: "/servicios",
+    image: "https://bivelectrics.cl/wp-content/uploads/2020/11/mantenimiento.jpg",
+    title: "Mantenimiento \nIndustrial",
+    description: "Brindamos mantenimiento preventivo y correctivo para mantener tus equipos operativos, seguros y con mayor vida útil.",
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1562324771-4fb277001e1a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Construcción y\nAcabados",
-    description: "Ejecución de obras civiles, remodelaciones y acabados de calidad.",
-    buttonLink: "/servicios",
+    image: "https://images.unsplash.com/photo-1717386255773-a456c611dc4e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Automatización \nIndustrial",
+    description: "Implementamos sistemas de control y automatización para optimizar procesos y reducir tiempos de parada.",
   },
   {
     id: 3,
     image: "https://images.unsplash.com/photo-1584809923235-fabdba83d1df?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Tecnología\ny Automatización",
-    description: "Integramos domótica y sistemas conectados con control remoto para \n mejorar productividad y seguridad en tus instalaciones.",
-    buttonLink: "/servicios",
+    title: "Soluciones \nMecatrónicas",
+    description: "Integramos mecánica, electrónica y software para desarrollar soluciones eficientes adaptadas a tu operación.",
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Ingeniería y Gestión\n de Proyectos",
-    description: "Asesoría profesional y cumplimiento de normativas vigentes.",
-    buttonLink: "/servicios",
+    image: "https://images.unsplash.com/photo-1732714552116-399f828fa355?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Soluciones \nEléctricas",
+    description: "Diseñamos y ejecutamos sistemas eléctricos en alta y baja tensión para plantas, comercios y proyectos residenciales.",
   },
 ]
 
@@ -59,7 +54,7 @@ export default function HeroHome() {
   }, [currentIndex]);
 
   return (
-    <section className="relative w-full h-[80vh] min-h-80 flex items-center overflow-hidden">
+    <section className="relative w-full h-[70vh] min-h-70 flex items-center overflow-hidden">
       {/* Contenedor de slides */}
       <div
         className="flex w-full h-full transition-transform duration-700 ease-in-out"
@@ -115,9 +110,8 @@ export default function HeroHome() {
           <button
             key={slide.id}
             onClick={() => setCurrentIndex(index)}
-            className={`h-2 w-2 rounded-full border border-white transition-all ${
-              currentIndex === index ? "bg-white w-4" : "bg-white/40"
-            }`}
+            className={`h-2 w-2 rounded-full border border-white transition-all ${currentIndex === index ? "bg-white w-4" : "bg-white/40"
+              }`}
             aria-label={`Ir al slide ${index + 1}`}
           />
         ))}

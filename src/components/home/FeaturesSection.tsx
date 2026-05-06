@@ -3,7 +3,7 @@ const features = [
   {
     id: 1,
     icon: <Wrench className="w-10 h-10" />,
-    title: "Solución Mecatrónicas Integrales",
+    title: "Soluciones Mecatrónicas",
     description: "Integramos mecánica, electrónica y software para automatizar y optimizar tus líneas de producción."
   },
   {
@@ -29,7 +29,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {features.map((feature) => (
           <div key={feature.id} className="flex flex-col items-center justify-center py-20 gap-4">

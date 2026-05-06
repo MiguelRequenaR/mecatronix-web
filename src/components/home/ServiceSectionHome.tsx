@@ -3,10 +3,10 @@ import services from "@/data/service"
 export default function ServiceSectionHome() {
   return (
     <section className="max-w-7xl mx-auto py-20">
-      <h2 className="text-3xl text-primary uppercase font-bold text-center">
+      <h2 className="text-3xl text-primary uppercase font-bold text-center" data-aos="fade-up">
         Servicios
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-10" data-aos="fade-up" data-delay="100">
         {services.map((service) => (
           <div key={service.id}>
             <div className="overflow-hidden rounded-3xl group">
@@ -21,7 +21,7 @@ export default function ServiceSectionHome() {
           </div>
         ))}
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center" data-aos="fade-up" data-delay="200">
         <button
           className="relative overflow-hidden bg-transparent px-6 py-2 uppercase cursor-pointer font-bold border border-primary group transition-colors rounded-full duration-500 hover:text-white text-sm text-primary"
         >
