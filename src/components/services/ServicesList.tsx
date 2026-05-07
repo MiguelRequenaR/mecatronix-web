@@ -1,5 +1,6 @@
 import services from "@/data/service"
 import { ArrowRight } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function ServicesList() {
   return (
@@ -11,9 +12,11 @@ export default function ServicesList() {
       <hr className="my-8 border-t border-primary mx-4 md:mx-0" data-aos="fade-up" data-aos-delay="300" />
       <div className="space-y-12 mx-4 md:mx-0" data-aos="fade-up" data-aos-delay="400">
         {services.map((service) => (
-          <article
+          <Link
             key={service.id}
-            className="border-b border-primary/20 pb-12 grid grid-cols-1 md:grid-cols-[120px_minmax(0,520px)_1fr] items-start gap-4 md:gap-6 group cursor-pointer"
+            to={`/servicios/${service.id}`}
+            className="border-b border-primary/20 pb-12 grid grid-cols-1 md:grid-cols-[120px_minmax(0,520px)_1fr] items-start gap-4 md:gap-6 group cursor-pointer hover:no-underline"
+            aria-label={`Ver más detalles de ${service.title}`}
           >
             <span className="text-5xl md:text-6xl font-bold text-gray-300 leading-none">
               {String(service.id).padStart(2, "0")}
@@ -21,12 +24,9 @@ export default function ServicesList() {
             <h3 className="text-2xl uppercase font-bold text-primary leading-tight">
               {service.title}
             </h3>
-            <a
-              className="w-14 h-14 rounded-full border border-primary/20 flex items-center justify-center text-primary shrink-0 md:justify-self-end group-hover:bg-primary group-hover:text-white transition-colors duration-500"
-              href={`/servicios/${service.id}`}
-            >
+            <span className="w-14 h-14 rounded-full border border-primary/20 flex items-center justify-center text-primary shrink-0 md:justify-self-end group-hover:bg-primary group-hover:text-white transition-colors duration-500">
               <ArrowRight className="w-5 h-5 transition-transform duration-500 group-hover:rotate-360" />
-            </a>
+            </span>
             <span className="hidden md:block" />
             <img
               src={service.image}
@@ -36,8 +36,9 @@ export default function ServicesList() {
             <p className="text-lg text-gray-500 leading-relaxed max-w-xl">
               {service.description}
             </p>
-          </article>
+          </Link>
         ))}
+  
       </div>
     </section>
   )

@@ -5,6 +5,7 @@ import ScrollToTop from "@/utils/ScrollToTop"
 import HomePage from "@/features/home"
 import AboutPage from "@/features/about"
 import ServicesPage from "@/features/services"
+import ServiceDetailPage from "@/features/services/ServiceDetailPage"
 import ContactPage from "@/features/contact"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -28,6 +29,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/nosotros" element={<AboutPage />} />
           <Route path="/servicios" element={<ServicesPage />} />
+          <Route path="/servicios/:serviceId" element={<ServiceDetailPage />} />
           <Route path="/contacto" element={<ContactPage />} />
         </Route>
       </Routes>
