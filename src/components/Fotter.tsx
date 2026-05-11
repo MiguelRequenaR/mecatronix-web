@@ -11,14 +11,50 @@ export default function Fotter() {
           <hr className="border-primary w-full" />
         </div>
         <div className="flex flex-col md:flex-row justify-center items-stretch text-center py-10 space-y-10 md:space-y-0">
-          <div className="flex flex-col items-center flex-1">
+          <div className="flex flex-col items-center flex-1 gap-1">
             <h3 className="text-primary text-lg font-semibold uppercase">Contactanos</h3>
-            <p className="flex items-center justify-center gap-2 text-gray-600 pt-2">
-              <Mail className="w-6 h-6 text-primary" /> info@mecatronix.com
-            </p>
-            <p className="flex items-center justify-center gap-2 text-gray-600">
-              <Phone className="w-6 h-6 text-primary" /> +51 902 778 456
-            </p>
+            <a
+              href="mailto:info@mecatronix.com"
+              className="
+                  flex items-center gap-4 group cursor-pointer pb-1 relative w-fit
+                  text-gray-600 transition-colors duration-200 font-medium
+                  hover:text-primary
+                "
+              aria-label="Enviar correo a info@mecatronix.com"
+            >
+              <Mail className="w-6 h-6 text-primary" />
+              <span className="relative z-10">
+                info@mecatronix.com
+              </span>
+              <span
+                className="
+                    absolute left-0 bottom-0 h-px bg-primary rounded
+                    transition-all duration-300 ease-in-out
+                    w-0 group-hover:w-full
+                  "
+              />
+            </a>
+            <a
+              href="tel:+51902778456"
+              className="
+                  flex items-center gap-4 group cursor-pointer pb-1 relative w-fit
+                  text-gray-600 transition-colors duration-200 font-medium
+                  hover:text-primary
+                "
+              aria-label="Llamar al teléfono +51 902 778 456"
+            >
+              <Phone className="w-6 h-6 text-primary" />
+              <span className="relative z-10">
+                +51 902 778 456
+              </span>
+              <span
+                className="
+                    absolute left-0 bottom-0 h-px bg-primary rounded
+                    transition-all duration-300 ease-in-out
+                    w-0 group-hover:w-full
+                  "
+              />
+            </a>
           </div>
           <div className="hidden md:block w-px bg-primary mx-8"></div>
           <div className="flex flex-col items-center flex-1">
