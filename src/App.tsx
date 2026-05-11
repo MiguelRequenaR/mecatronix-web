@@ -7,6 +7,9 @@ import AboutPage from "@/features/about"
 import ServicesPage from "@/features/services"
 import ServiceDetailPage from "@/features/services/ServiceDetailPage"
 import ContactPage from "@/features/contact"
+import PrivacyPolicyPage from "@/features/privacy-policy"
+import TermsPage from "@/features/terms"
+import ComplaintsBookPage from "@/features/complaints"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -31,6 +34,9 @@ function App() {
           <Route path="/servicios" element={<ServicesPage />} />
           <Route path="/servicios/:serviceId" element={<ServiceDetailPage />} />
           <Route path="/contacto" element={<ContactPage />} />
+          <Route path="/politica-de-privacidad" element={<PrivacyPolicyPage />} />
+          <Route path="/terminos-y-condiciones" element={<TermsPage />} />
+          <Route path="/libro-de-reclamaciones" element={<ComplaintsBookPage />} />
         </Route>
       </Routes>
     </>

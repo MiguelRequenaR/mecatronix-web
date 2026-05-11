@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react"
+import { Link } from "react-router-dom"
 import logoMecatronix from "/mecatronixLogoWB.png"
 
 export default function Fotter() {
@@ -71,7 +72,72 @@ export default function Fotter() {
             <p className="text-gray-600">Sábado y Domingo: 10:00 - 20:00</p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center gap-4">
+        <hr className="border-primary w-full" />
+        <div className="flex items-center justify-center gap-4 py-5">
+          <Link
+            to="/politica-de-privacidad"
+            className="
+                  flex items-center gap-4 group cursor-pointer pb-1 relative w-fit
+                  text-gray-600 transition-colors duration-200 font-medium
+                  hover:text-primary
+                "
+            aria-label="Política de privacidad"
+          >
+            <span className="relative z-10 uppercase text-sm font-bold">
+              Política de privacidad
+            </span>
+            <span
+              className="
+                    absolute left-0 bottom-0 h-px bg-primary rounded
+                    transition-all duration-300 ease-in-out
+                    w-0 group-hover:w-full
+                  "
+            />
+          </Link>
+          <span className="text-primary">|</span>
+          <Link
+            to="/terminos-y-condiciones"
+            className="
+                  flex items-center gap-4 group cursor-pointer pb-1 relative w-fit
+                  text-gray-600 transition-colors duration-200 font-medium
+                  hover:text-primary
+                "
+            aria-label="Términos y condiciones"
+          >
+            <span className="relative z-10 uppercase text-sm font-bold">
+              Términos y condiciones
+            </span>
+            <span
+              className="
+                    absolute left-0 bottom-0 h-px bg-primary rounded
+                    transition-all duration-300 ease-in-out
+                    w-0 group-hover:w-full
+                  "
+            />
+          </Link>
+          <span className="text-primary">|</span>
+          <Link
+            to="/libro-de-reclamaciones"
+            className="
+                  flex items-center gap-4 group cursor-pointer pb-1 relative w-fit
+                  text-gray-600 transition-colors duration-200 font-medium
+                  hover:text-primary
+                "
+            aria-label="Libro de reclamaciones"
+          >
+            <span className="relative z-10 uppercase text-sm font-bold">
+              Libro de reclamaciones
+            </span>
+            <span
+              className="
+                    absolute left-0 bottom-0 h-px bg-primary rounded
+                    transition-all duration-300 ease-in-out
+                    w-0 group-hover:w-full
+                  "
+            />
+          </Link>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-4 text-sm">
           <p className="text-gray-600 px-4 text-center md:text-left">2026 ©Todos los derechos reservados. Desarrollado por <a href="https://www.groblestudio.com/" target="_blank" rel="noopener noreferrer" className="text-primary underline">Grobles Studio.</a></p>
           <div className="flex items-center justify-center gap-4">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png" alt="facebook" className="w-6 h-6 cursor-pointer" />
