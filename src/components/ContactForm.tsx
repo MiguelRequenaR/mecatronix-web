@@ -7,6 +7,20 @@ export default function ContactForm() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const form = e.currentTarget
+    const data = new FormData(form)
+
+    const email = data.get("email") as string
+    const phone = data.get("phone") as string
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert("Por favor ingresa un correo válido.")
+      return
+    }
+    if (!/^\d{9}$/.test(phone)) {
+      alert("El teléfono debe tener 9 dígitos.")
+      return
+    }
+
     openContactWhatsApp(form)
     form.reset()
   }
@@ -23,6 +37,7 @@ export default function ContactForm() {
             type="text"
             id="name"
             name="name"
+            required
             placeholder="Nombre"
             className="w-full pl-10 text-base text-primary placeholder:text-slate-300 focus:outline-none"
           />
@@ -37,7 +52,11 @@ export default function ContactForm() {
             type="tel"
             id="phone"
             name="phone"
+            required
             placeholder="Teléfono"
+            onInput={(e) => {
+              e.currentTarget.value = e.currentTarget.value.replace(/[^0-9]/g, '').slice(0, 9);
+            }}
             className="w-full pl-10 text-base text-primary placeholder:text-slate-300 focus:outline-none"
           />
         </div>
@@ -51,6 +70,7 @@ export default function ContactForm() {
             type="email"
             id="email"
             name="email"
+            required
             placeholder="Correo Electrónico"
             className="w-full pl-10 text-base text-primary placeholder:text-slate-300 focus:outline-none"
           />
@@ -64,6 +84,7 @@ export default function ContactForm() {
           <textarea
             id="message"
             name="message"
+            required
             rows={3}
             placeholder="Deja tu mensaje aquí, te responderemos a la brevedad"
             className="w-full resize-none pl-10 text-base text-primary placeholder:text-slate-300 focus:outline-none"
