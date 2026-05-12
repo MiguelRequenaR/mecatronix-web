@@ -49,7 +49,7 @@ const clients = [
 
 export default function ClientsSection() {
   return (
-    <section className=" py-20">
+    <section className="pb-20">
       <style>{`
         @keyframes clients-marquee {
           from { transform: translateX(0); }
