@@ -11,6 +11,8 @@ export type ContactFormWhatsAppData = {
   name: string
   phone: string
   email: string
+  ruc: string
+  razon_social: string
   message: string
 }
 
@@ -21,6 +23,8 @@ export function whatsappMessage(data: ContactFormWhatsAppData): string {
     `Nombre: ${data.name || "—"}`,
     `Teléfono: ${data.phone || "—"}`,
     `Correo: ${data.email || "—"}`,
+    `RUC: ${data.ruc || "—"}`,
+    `Razón Social: ${data.razon_social || "—"}`,
     `Mensaje: ${data.message || "—"}`,
   ].join("\n")
 
@@ -33,6 +37,8 @@ export function openContactWhatsApp(form: HTMLFormElement): void {
     name: String(fd.get("name") ?? "").trim(),
     phone: String(fd.get("phone") ?? "").trim(),
     email: String(fd.get("email") ?? "").trim(),
+    ruc: String(fd.get("ruc") ?? "").trim(),
+    razon_social: String(fd.get("razon_social") ?? "").trim(),
     message: String(fd.get("message") ?? "").trim(),
   })
   window.open(url, "_blank", "noopener,noreferrer")

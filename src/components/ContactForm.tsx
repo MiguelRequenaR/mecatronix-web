@@ -1,5 +1,5 @@
 import type { FormEvent } from "react"
-import { Mail, Pencil, Phone, Send, UserRound } from "lucide-react"
+import { Building2, User, Mail, Pencil, Phone, Send, UserRound } from "lucide-react"
 
 import { openContactWhatsApp } from "@/utils/whatsappMessage"
 
@@ -11,6 +11,8 @@ export default function ContactForm() {
 
     const email = data.get("email") as string
     const phone = data.get("phone") as string
+    const ruc = data.get("ruc") as string
+    const razon_social = data.get("razon_social") as string
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       alert("Por favor ingresa un correo válido.")
@@ -18,6 +20,14 @@ export default function ContactForm() {
     }
     if (!/^\d{9}$/.test(phone)) {
       alert("El teléfono debe tener 9 dígitos.")
+      return
+    }
+    if (!/^\d{11}$/.test(ruc)) {
+      alert("El RUC debe tener 11 dígitos.")
+      return
+    }
+    if (!/^[a-zA-Z0-9\s]+$/.test(razon_social)) {
+      alert("La razón social debe contener solo letras.")
       return
     }
 
@@ -72,6 +82,36 @@ export default function ContactForm() {
             name="email"
             required
             placeholder="Correo Electrónico"
+            className="w-full pl-10 text-base text-primary placeholder:text-slate-300 focus:outline-none"
+          />
+        </div>
+
+        <div className="relative border-b border-neutral-700 pb-3">
+          <User className="absolute left-0 top-1 h-5 w-5 text-primary" />
+          <label htmlFor="ruc" className="sr-only">
+            RUC
+          </label>
+          <input
+            type="text"
+            id="ruc"
+            name="ruc"
+            required
+            placeholder="RUC"
+            className="w-full pl-10 text-base text-primary placeholder:text-slate-300 focus:outline-none"
+          />
+        </div>
+
+        <div className="relative border-b border-neutral-700 pb-3">
+          <Building2 className="absolute left-0 top-1 h-5 w-5 text-primary" />
+          <label htmlFor="razon_social" className="sr-only">
+            Razón Social
+          </label>
+          <input
+            type="text"
+            id="razon_social"
+            name="razon_social"
+            required
+            placeholder="Razón Social"
             className="w-full pl-10 text-base text-primary placeholder:text-slate-300 focus:outline-none"
           />
         </div>

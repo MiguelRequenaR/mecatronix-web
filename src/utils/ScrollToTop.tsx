@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
+import AOS from "aos"
 
 export default function ScrollToTop() {
   const { pathname } = useLocation()
@@ -10,6 +11,11 @@ export default function ScrollToTop() {
       lenis.scrollTo(0, { immediate: true })
     }
     window.scrollTo(0, 0)
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        AOS.refresh()
+      })
+    })
   }, [pathname])
 
   return null

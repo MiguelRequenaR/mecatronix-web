@@ -1,26 +1,30 @@
 import { Link } from "react-router-dom"
-
-import services from "@/data/service"
+import { getServicesForHome } from "@/data/service"
 
 export default function ServiceSectionHome() {
+  const homeServices = getServicesForHome()
+
   return (
     <section className="max-w-7xl mx-auto py-20">
-      <h2 className="text-3xl text-primary uppercase font-bold text-center" data-aos="fade-up">
-        Servicios
+      <h2 className="text-2xl md:text-3xl text-primary uppercase font-bold text-center" data-aos="fade-up">
+        Nuestros Servicios
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-10 mx-4 md:mx-0" data-aos="fade-up" data-delay="100">
-        {services.map((service) => (
-          <div key={service.id}>
-            <div className="overflow-hidden rounded-3xl group">
+        {homeServices.map((service) => (
+          <Link
+            key={service.id}
+            to={`/servicios/${service.id}`}
+            className="group block hover:no-underline"
+            aria-label={`Ver más detalles de ${service.title}`}
+          >
+            <div className="overflow-hidden rounded-3xl">
               <img
                 src={service.image}
-                alt={service.title}
-                className="rounded-3xl transition-transform duration-300 group-hover:scale-110 w-full h-auto cursor-pointer"
+                className="rounded-3xl transition-transform duration-300 group-hover:scale-110 w-full h-auto"
               />
             </div>
             <h3 className="text-lg text-primary uppercase font-bold pt-4 text-center">{service.title}</h3>
-      
-          </div>
+          </Link>
         ))}
       </div>
       <div className="flex justify-center" data-aos="fade-up" data-delay="200">

@@ -142,6 +142,8 @@ export default function Fotter() {
           <div className="flex items-center justify-center gap-4">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png" alt="facebook" className="w-6 h-6 cursor-pointer" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="instagram" className="w-6 h-6 cursor-pointer" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="linkedin" className="w-6 h-6 cursor-pointer" />
+            <img src="https://i.pinimg.com/originals/e4/15/d6/e415d6bd27900cc066d0b8b23a7f1055.png" alt="tiktok" className="w-7 h-7 cursor-pointer" />
           </div>
         </div>
       </div>
