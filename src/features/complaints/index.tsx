@@ -25,8 +25,8 @@ export default function ComplaintsBookPage() {
   }
 
   return (
-    <section className="max-w-4xl mx-auto px-6 py-20 text-gray-700">
-      <h1 className="text-3xl md:text-4xl font-bold text-primary uppercase mb-4" data-aos="fade-up">
+    <section className="max-w-4xl mx-auto px-6 py-10 md:py-20 text-gray-700">
+      <h1 className="text-3xl md:text-4xl font-bold text-primary uppercase mb-4 text-center md:text-left" data-aos="fade-up">
         Libro de Reclamaciones
       </h1>
       <p className="text-base leading-relaxed mb-10" data-aos="fade-up" data-aos-delay="100">

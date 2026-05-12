@@ -1,7 +1,7 @@
 export default function PrivacyPolicyPage() {
   return (
-    <section className="max-w-4xl mx-auto px-6 py-20 text-gray-700">
-      <h1 className="text-3xl md:text-4xl font-bold text-primary uppercase mb-10" data-aos="fade-up">
+    <section className="max-w-4xl mx-auto px-6 py-10 md:py-20 text-gray-700">
+      <h1 className="text-3xl md:text-4xl font-bold text-primary uppercase mb-10 text-center md:text-left" data-aos="fade-up">
         Política de Privacidad
       </h1>
 

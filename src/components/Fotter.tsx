@@ -73,7 +73,7 @@ export default function Fotter() {
           </div>
         </div>
         <hr className="border-primary w-full" />
-        <div className="flex items-center justify-center gap-4 py-5">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 py-5">
           <Link
             to="/politica-de-privacidad"
             className="
@@ -94,7 +94,7 @@ export default function Fotter() {
                   "
             />
           </Link>
-          <span className="text-primary">|</span>
+          <span className="text-primary hidden md:block">|</span>
           <Link
             to="/terminos-y-condiciones"
             className="
@@ -115,7 +115,7 @@ export default function Fotter() {
                   "
             />
           </Link>
-          <span className="text-primary">|</span>
+          <span className="text-primary hidden md:block">|</span>
           <Link
             to="/libro-de-reclamaciones"
             className="
