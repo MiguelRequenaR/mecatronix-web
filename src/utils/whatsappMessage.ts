@@ -1,5 +1,12 @@
 export const WHATSAPP_PHONE = "51902778456"
 
+const DEFAULT_FLOATING_MESSAGE =
+  "Hola, me gustaría obtener más información sobre sus servicios."
+
+export function getWhatsAppChatUrl(message: string = DEFAULT_FLOATING_MESSAGE): string {
+  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`
+}
+
 export type ContactFormWhatsAppData = {
   name: string
   phone: string

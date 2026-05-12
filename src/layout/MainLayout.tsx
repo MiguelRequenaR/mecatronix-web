@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom"
 import NavBar from "@/components/NavBar"
 import Fotter from "@/components/Fotter"
 import CallToAction from "@/components/CallToAction"
+import FloatingWhatsApp from "@/components/FloatingWhatsApp"
 import { useLenis } from "@/hooks/useLenis"
 
 export default function MainLayout() {
@@ -14,6 +15,7 @@ export default function MainLayout() {
       </main>
       <CallToAction />
       <Fotter />
+      <FloatingWhatsApp />
     </div>
   )
 }
