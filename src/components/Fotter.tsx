@@ -13,7 +13,7 @@ export default function Fotter() {
         </div>
         <div className="flex flex-col md:flex-row justify-center items-stretch text-center py-10 space-y-10 md:space-y-0">
           <div className="flex flex-col items-center flex-1 gap-1">
-            <h3 className="text-primary text-lg font-semibold uppercase">Contactanos</h3>
+            <h3 className="text-primary text-sm md:text-lg font-semibold uppercase">Contactanos</h3>
             <a
               href="mailto:info@mecatronix.com"
               className="
@@ -24,7 +24,7 @@ export default function Fotter() {
               aria-label="Enviar correo a info@mecatronix.com"
             >
               <Mail className="w-6 h-6 text-primary" />
-              <span className="relative z-10">
+              <span className="relative text-sm md:text-base z-10">
                 info@mecatronix.com
               </span>
               <span
@@ -45,7 +45,7 @@ export default function Fotter() {
               aria-label="Llamar al teléfono +51 902 778 456"
             >
               <Phone className="w-6 h-6 text-primary" />
-              <span className="relative z-10">
+              <span className="relative z-10 text-sm md:text-base">
                 +51 902 778 456
               </span>
               <span
@@ -59,17 +59,16 @@ export default function Fotter() {
           </div>
           <div className="hidden md:block w-px bg-primary mx-8"></div>
           <div className="flex flex-col items-center flex-1">
-            <h3 className="text-primary text-lg font-semibold uppercase">Dirección</h3>
-            <p className="text-gray-600 flex items-center justify-center gap-2 pt-2">
-              <MapPin className="w-6 h-6 text-primary" /> Av. La Victoria, Lima
+            <h3 className="text-primary text-sm md:text-lg font-semibold uppercase">Dirección</h3>
+            <p className="text-gray-600 flex items-center justify-center gap-2 pt-2 text-sm md:text-base">
+              <MapPin className="w-6 h-6 text-primary" /> Lima, Perú
             </p>
-            <p className="text-gray-600">Lima, Perú</p>
           </div>
           <div className="hidden md:block w-px bg-primary mx-8"></div>
           <div className="flex flex-col items-center flex-1">
-            <h3 className="text-primary text-lg uppercase font-semibold">Horario de atención</h3>
-            <p className="text-gray-600 pt-2">Lunes a Viernes: 10:00 - 22:00</p>
-            <p className="text-gray-600">Sábado y Domingo: 10:00 - 20:00</p>
+            <h3 className="text-primary text-sm md:text-lg uppercase font-semibold">Horario de atención</h3>
+            <p className="text-gray-600 pt-2 text-sm md:text-base">Lunes a Viernes: 10:00 - 22:00</p>
+            <p className="text-gray-600 text-sm md:text-base">Sábado y Domingo: 10:00 - 20:00</p>
           </div>
         </div>
         <hr className="border-primary w-full" />

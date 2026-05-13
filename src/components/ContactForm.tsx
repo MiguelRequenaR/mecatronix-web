@@ -36,7 +36,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form className="bg-white p-10" onSubmit={handleSubmit}>
+    <form className="bg-white p-5 md:p-10" onSubmit={handleSubmit}>
       <div className="space-y-11">
         <div className="relative border-b border-neutral-700 pb-3">
           <UserRound className="absolute left-0 top-1 h-5 w-5 text-primary" />

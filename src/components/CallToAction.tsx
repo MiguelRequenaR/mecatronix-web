@@ -10,12 +10,12 @@ export default function CallToAction() {
       <div className="absolute inset-0 bg-black opacity-70"></div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 z-10" data-aos="zoom-in" data-delay="100">
         <div className="text-center md:text-left space-y-4">
-          <h2 className="text-3xl md:text-4xl text-white font-bold uppercase">
+          <h2 className="text-2xl md:text-4xl text-white font-bold uppercase">
             Inicia tu proyecto hoy
           </h2>
-          <p className="text-white">Cuéntanos qué necesitas y te ayudamos con la mejor solución para tu empresa.</p>
+          <p className="text-white text-sm md:text-base">Cuéntanos qué necesitas y te ayudamos con la mejor solución para tu empresa.</p>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
           <a
             className="relative overflow-hidden bg-transparent px-6 py-2 uppercase cursor-pointer font-bold border-2 border-white group transition-colors rounded-full duration-500 hover:text-white text-sm text-white"
             href="/servicios"

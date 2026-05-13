@@ -80,7 +80,7 @@ export default function HeroHome() {
                 <h2 className="text-white text-3xl md:text-[60px] font-bold mb-4 drop-shadow-lg uppercase whitespace-pre-line">
                   {slide.title}
                 </h2>
-                <p className="text-white text-lg md:text-2xl mb-6 drop-shadow whitespace-pre-line">
+                <p className="text-white text-base md:text-2xl mb-6 drop-shadow whitespace-pre-line">
                   {slide.description}
                 </p>
               </div>

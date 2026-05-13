@@ -21,7 +21,7 @@ export default function ServicesList() {
             <span className="text-5xl md:text-6xl font-bold text-gray-300 leading-none">
               {String(service.id).padStart(2, "0")}
             </span>
-            <h3 className="text-2xl uppercase font-bold text-primary leading-tight">
+            <h3 className="text-lg md:text-2xl uppercase font-bold text-primary leading-tight">
               {service.title}
             </h3>
             <span className="w-14 h-14 rounded-full border border-primary/20 flex items-center justify-center text-primary shrink-0 md:justify-self-end group-hover:bg-primary group-hover:text-white transition-colors duration-500">
@@ -31,9 +31,9 @@ export default function ServicesList() {
             <img
               src={service.image}
               alt={service.title}
-              className="w-full h-[320px] object-cover rounded-3xl"
+              className="w-full md:h-[320px] object-cover rounded-3xl"
             />
-            <p className="text-lg text-gray-500 leading-relaxed max-w-xl">
+            <p className="text-[15px] md:text-lg text-gray-500 leading-relaxed max-w-xl">
               {service.description}
             </p>
           </Link>

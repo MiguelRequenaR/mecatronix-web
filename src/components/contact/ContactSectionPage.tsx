@@ -8,8 +8,8 @@ export default function ContactSectionPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 md:px-0">
           <div className="space-y-6" data-aos="fade-up" data-aos-delay="100">
             <span className="text-primary text-sm font-bold uppercase">Contáctanos</span>
-            <h2 className="text-primary text-2xl md:text-3xl font-bold uppercase">¿Tienes alguna consulta? Escríbenos</h2>
-            <p className="text-gray-600">
+            <h2 className="text-primary text-lg md:text-3xl font-bold uppercase">¿Tienes alguna consulta? Escríbenos</h2>
+            <p className="text-gray-600 text-sm md:text-base">
               En Mecatronix, estamos comprometidos a brindar la mejor atención y solución a tus necesidades.
             </p>
             <div className="flex flex-col gap-3 pt-2">
@@ -23,7 +23,7 @@ export default function ContactSectionPage() {
                 aria-label="Enviar correo a info@mecatronix.com"
               >
                 <Mail className="w-6 h-6 text-primary" />
-                <span className="relative z-10">
+                <span className="relative z-10 text-sm md:text-base">
                   info@mecatronix.com
                 </span>
                 <span
@@ -44,7 +44,7 @@ export default function ContactSectionPage() {
                 aria-label="Llamar al teléfono +51 902 778 456"
               >
                 <Phone className="w-6 h-6 text-primary" />
-                <span className="relative z-10">
+                <span className="relative z-10 text-sm md:text-base">
                   +51 902 778 456
                 </span>
                 <span
@@ -57,7 +57,7 @@ export default function ContactSectionPage() {
               </a>
               <div className="flex items-center gap-4">
                 <MapPin className="w-6 h-6 text-primary" />
-                <span className="text-gray-600">Av. La Victoria, Lima</span>
+                <span className="text-gray-600 text-sm md:text-base">Lima, Perú</span>
               </div>
             </div>
           </div>
