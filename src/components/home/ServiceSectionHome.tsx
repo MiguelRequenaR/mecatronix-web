@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { getServicesForHome } from "@/data/service"
+import { ArrowRight } from "lucide-react"
 
 export default function ServiceSectionHome() {
   const homeServices = getServicesForHome()
@@ -9,22 +10,34 @@ export default function ServiceSectionHome() {
       <h2 className="text-2xl md:text-3xl text-primary uppercase font-bold text-center" data-aos="fade-up">
         Nuestros Servicios
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-10 mx-4 md:mx-0" data-aos="fade-up" data-delay="100">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-10 mx-4 md:mx-0" data-aos="fade-up" data-delay="100">
         {homeServices.map((service) => (
           <Link
             key={service.id}
-            to={`/servicios/${service.id}`}
-            className="group block hover:no-underline"
+            to={`/servicios/${service.slug}`}
+            className="group block hover:no-underline bg-gray-100 rounded-2xl p-5"
             aria-label={`Ver más detalles de ${service.title}`}
           >
-            <div className="overflow-hidden rounded-3xl">
-              <img
-                src={service.image}
-                className="rounded-3xl transition-transform duration-300 group-hover:scale-110 w-full h-auto"
-              />
+            <div className="flex flex-col md:flex-row gap-5 rounded-lg items-stretch">
+              <div className="overflow-hidden rounded-2xl w-full h-56 md:w-80 md:h-[300px] shrink-0">
+                <img
+                  src={service.image}
+                  className="transition-transform duration-300 group-hover:scale-110 w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col flex-1 space-y-5">
+                <h3 className="text-lg text-primary uppercase font-bold pt-4 md:pt-4">{service.title}</h3>
+                <p className="text-gray-600 text-[15px]">{service.description}</p>
+                <div className="flex items-center gap-2 mt-auto bg-white w-fit px-4 rounded-2xl py-2">
+                  <p className="uppercase text-primary text-sm font-bold">
+                    Conoce más
+                  </p>
+                  <ArrowRight className="w-5 h-5 text-primary transition-transform duration-500 group-hover:translate-x-2" />
+                </div>
+              </div>
             </div>
-            <h3 className="text-lg text-primary uppercase font-bold pt-4 text-center">{service.title}</h3>
           </Link>
+    
         ))}
       </div>
       <div className="flex justify-center" data-aos="fade-up" data-delay="200">
