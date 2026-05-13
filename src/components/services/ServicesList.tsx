@@ -13,8 +13,8 @@ export default function ServicesList() {
       <div className="space-y-12 mx-4 md:mx-0" data-aos="fade-up" data-aos-delay="400">
         {services.map((service) => (
           <Link
-            key={service.id}
-            to={`/servicios/${service.id}`}
+            key={service.slug}
+            to={`/servicios/${service.slug}`}
             className="border-b border-primary/20 pb-12 grid grid-cols-1 md:grid-cols-[120px_minmax(0,520px)_1fr] items-start gap-4 md:gap-6 group cursor-pointer hover:no-underline"
             aria-label={`Ver más detalles de ${service.title}`}
           >

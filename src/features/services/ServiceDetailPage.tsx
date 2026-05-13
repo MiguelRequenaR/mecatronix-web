@@ -1,14 +1,14 @@
 import { useEffect, useMemo } from "react"
 import { Link, Navigate, useParams } from "react-router-dom"
 import AOS from "aos"
-import services, { getServiceByIdParam } from "@/data/service"
+import services, { getServiceBySlugParam } from "@/data/service"
 import { getServiceFeatureIcon } from "@/data/serviceFeatureIcons"
 import ContactSectionService from "@/components/services/ContactSectionService"
 
 export default function ServiceDetailPage() {
 
-  const { serviceId } = useParams();
-  const service = serviceId ? getServiceByIdParam(serviceId) : undefined;
+  const { serviceSlug } = useParams();
+  const service = serviceSlug ? getServiceBySlugParam(serviceSlug) : undefined;
 
   const otherServices = useMemo(() => {
     if (!service) return []
@@ -41,7 +41,7 @@ export default function ServiceDetailPage() {
   }
 
   return (
-    <main key={service.id}>
+    <main key={service.slug}>
       <section className="py-10 md:py-15">
         <div className="mx-4 md:mx-0 space-y-5">
           <div className="max-w-7xl mx-auto">
@@ -134,9 +134,9 @@ export default function ServiceDetailPage() {
               <p className="mb-4 text-xs font-bold uppercase tracking-wide text-primary md:hidden">Otros servicios</p>
               <ul className="flex flex-col gap-3 sm:gap-4 md:gap-5">
                 {otherServices.map((s) => (
-                  <li key={s.id}>
+                  <li key={s.slug}>
                     <Link
-                      to={`/servicios/${s.id}`}
+                      to={`/servicios/${s.slug}`}
                       className="text-sm font-medium text-balance text-gray-700 transition-colors hover:text-primary md:text-base"
                     >
                       {s.title}

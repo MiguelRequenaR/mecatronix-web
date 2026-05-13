@@ -32,7 +32,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/nosotros" element={<AboutPage />} />
           <Route path="/servicios" element={<ServicesPage />} />
-          <Route path="/servicios/:serviceId" element={<ServiceDetailPage />} />
+          <Route path="/servicios/:serviceSlug" element={<ServiceDetailPage />} />
           <Route path="/contacto" element={<ContactPage />} />
           <Route path="/politica-de-privacidad" element={<PrivacyPolicyPage />} />
           <Route path="/terminos-y-condiciones" element={<TermsPage />} />

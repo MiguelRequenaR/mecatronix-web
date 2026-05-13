@@ -10,6 +10,7 @@ export type Service = {
   id: number
   image: string
   title: string
+  slug: string
   description: string
   longDescription: string
   features: ServiceFeature[]
@@ -20,6 +21,7 @@ const services: Service[] = [
     id: 1,
     image: "https://www.stelorder.com/wp-content/uploads/2023/08/mantenimiento-preventivo-portada.png",
     title: "Mantenimiento Preventivo",
+    slug: "mantenimiento-preventivo",
     description: "Mantenimiento preventivo de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
       "Con el mantenimiento preventivo lo que queremos es evitar o mitigar las consecuencias de una posible falla del equipo, previniendo las incidencias antes de que estas ocurran. Las tareas de mantenimiento preventivo incluyen acciones como cambiar piezas consumibles en desgaste, lubricación, ajustes, etc. El mantenimiento preventivo debe evitar los fallos en el equipo antes de que estos ocurran.",
@@ -45,6 +47,7 @@ const services: Service[] = [
     id: 2,
     image: "https://midias-sites.totvs.com/es/wp-content/uploads/2022/10/Mantenimiento-predictivo.jpg",
     title: "Mantenimiento Predictivo",
+    slug: "mantenimiento-predictivo",
     description: "Mantenimiento predictivo de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
       "Mantenimiento predictivo de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
@@ -70,6 +73,7 @@ const services: Service[] = [
     id: 3,
     image: "https://www.tecsaqro.com.mx/wp-content/uploads/2018/09/mantenimiento-correctivo-1.jpg",
     title: "Mantenimiento Correctivo",
+    slug: "mantenimiento-correctivo",
     description: "Mantenimiento correctivo de equipos industriales para reparar fallas y garantizar la continuidad operativa.",
     longDescription:
       "Mantenimiento correctivo de equipos industriales para reparar fallas y garantizar la continuidad operativa.",
@@ -95,6 +99,7 @@ const services: Service[] = [
     id: 4,
     image: "https://gepcoformacion.es/wp-content/uploads/2024/11/gepco-formacion-primeros-laborales-3.jpg",
     title: "Auxilio técnico y atención de emergencias",
+    slug: "auxilio-tecnico-y-atencion-de-emergencias",
     description:
       "Auxilio técnico y atención de emergencias para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -121,6 +126,7 @@ const services: Service[] = [
     id: 5,
     image: "https://www.emasa.pe/imagenes/repuestos-sistema-electrico-automotriz.jpg",
     title: "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos",
+    slug: "venta-e-instalacion-de-repuestos-mecanicos-electricos-y-electronicos",
     description:
       "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -147,6 +153,7 @@ const services: Service[] = [
     id: 6,
     image: "https://teamdem.com/images/servicios/puesta-en-marcha-de-equipos-industriales.webp",
     title: "Instalación, montaje y puesta en marcha de equipos industriales",
+    slug: "instalacion-montaje-y-puesta-en-marcha-de-equipos-industriales",
     description:
       "Instalación, montaje y puesta en marcha de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -173,6 +180,7 @@ const services: Service[] = [
     id: 7,
     image: "https://gpooasis.com/wp-content/uploads/2020/11/Tipos-de-sistema-de-ventilacion.jpg",
     title: "Instalación de sistemas de ventilación y extracción de aire",
+    slug: "instalacion-de-sistemas-de-ventilacion-y-extraccion-de-aire",
     description:
       "Instalación de sistemas de ventilación y extracción de aire para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -200,6 +208,7 @@ const services: Service[] = [
     image:
       "https://20963350.fs1.hubspotusercontent-na1.net/hubfs/20963350/Imported_Blog_Media/Capacitacion-industrial-igual-a-seguridad-para-el-personal-2.png",
     title: "Capacitación técnica industrial",
+    slug: "capacitacion-tecnica-industrial",
     description:
       "Capacitación técnica industrial para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -226,6 +235,7 @@ const services: Service[] = [
     id: 9,
     image: "https://sepiia.run/wp-content/uploads/2025/02/tipos-de-procesos-automatizados-sepiia.webp",
     title: "Diseño e Implementación de proyectos de automatización",
+    slug: "diseno-e-implementacion-de-proyectos-de-automatizacion",
     description:
       "Diseño e Implementación de proyectos de automatización para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -252,6 +262,7 @@ const services: Service[] = [
     id: 10,
     image: "https://aggity.com/wp-content/uploads/2025/11/balanceo-de-lineas.webp",
     title: "Modificaciones en línea de producción",
+    slug: "modificaciones-en-linea-de-produccion",
     description:
       "Modificaciones en línea de producción para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -278,6 +289,7 @@ const services: Service[] = [
     id: 11,
     image: "https://manpan.com/wp-content/uploads/2024/10/camaras-conservacion-congelacion-panaderia-2.jpg",
     title: "Instalación de camaras de conservación y congelación",
+    slug: "instalacion-de-camaras-de-conservacion-y-congelacion",
     description:
       "Instalación de camaras de conservación y congelación para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -304,6 +316,7 @@ const services: Service[] = [
     id: 12,
     image: "https://siocorp.pe/wp-content/uploads/2023/12/t-de-fuerza.png",
     title: "Diseño e instalación de tableros eléctricos industriales",
+    slug: "diseno-e-instalacion-de-tableros-electricos-industriales",
     description:
       "Diseño e instalación de tableros eléctricos industriales para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -330,6 +343,7 @@ const services: Service[] = [
     id: 13,
     image: "https://www.iprecom.com/wp-content/uploads/2019/07/bomba-de-agua.jpg",
     title: "Mantenimiento de bombas de agua",
+    slug: "mantenimiento-de-bombas-de-agua",
     description:
       "Mantenimiento de bombas de agua para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -356,6 +370,7 @@ const services: Service[] = [
     id: 14,
     image: "https://mantenimientoindustrialcrm.com/wp-content/uploads/2020/10/generadores-electricos.jpg",
     title: "Mantenimiento de grupos electrógenos",
+    slug: "mantenimiento-de-grupos-electrogenos",
     description:
       "Mantenimiento de grupos electrógenos para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
@@ -384,6 +399,10 @@ export function getServiceByIdParam(param: string): Service | undefined {
   const id = parseInt(param, 10)
   if (!Number.isFinite(id) || id < 1) return undefined
   return services.find((service) => service.id === id)
+}
+
+export function getServiceBySlugParam(param: string): Service | undefined {
+  return services.find((service) => service.slug === param)
 }
 
 export const HOME_SERVICES_LIMIT = 4
