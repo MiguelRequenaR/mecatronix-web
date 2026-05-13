@@ -8,9 +8,11 @@ export default function ScrollToTop() {
   useEffect(() => {
     const lenis = window.__lenis
     if (lenis) {
-      lenis.scrollTo(0, { immediate: true })
+      lenis.scrollTo(0, { duration: 0 })
+    } else {
+      window.scrollTo(0, 0)
     }
-    window.scrollTo(0, 0)
+
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         AOS.refresh()
