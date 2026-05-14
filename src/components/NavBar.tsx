@@ -40,7 +40,7 @@ export default function NavBar() {
                 key={link.label}
                 className={`
                   flex items-center gap-1 cursor-pointer transition-colors duration-200
-                  font-bold uppercase relative group
+                  font-semibold uppercase relative group
                   ${isActiveLink(link.to) ? "text-primary" : "text-primary"}
                 `}
               >

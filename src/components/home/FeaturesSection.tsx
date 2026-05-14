@@ -9,7 +9,7 @@ const features = [
   {
     id: 2,
     icon: <ShieldCheck className="w-7 md:w-10 h-7 md:h-10" />,
-    title: "Confiabilidad Operativa \n Industrial",
+    title: "Confiabilidad Operativa",
     description: "Implementamos sistemas de control bajo estrictas normativas de seguridad y calidad industrial."
   },
   {
@@ -21,7 +21,7 @@ const features = [
   {
     id: 4,
     icon: <Headset className="w-7 md:w-10 h-7 md:h-10" />,
-    title: "Soporte Técnico Especializado",
+    title: "Soporte Técnico",
     description: "Atendemos emergencias para garantizar la continuidad de tu operación."
   }
 ]
@@ -37,7 +37,7 @@ export default function FeaturesSection() {
               <div className="bg-[#f5f5f4] rounded-full p-4 text-primary border border-dashed">
                 {feature.icon}
               </div>
-              <h3 className="text-sm md:text-xl text-primary uppercase font-bold text-center">{feature.title}</h3>
+              <h3 className="text-sm md:text-xl text-primary uppercase font-semibold text-center">{feature.title}</h3>
             </div>
             <p className="text-gray-600 text-sm md:text-base text-left md:text-center">{feature.description}</p>
           </div>
