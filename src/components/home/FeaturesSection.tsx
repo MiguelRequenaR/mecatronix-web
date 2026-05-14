@@ -9,7 +9,7 @@ const features = [
   {
     id: 2,
     icon: <ShieldCheck className="w-7 md:w-10 h-7 md:h-10" />,
-    title: "Confiabilidad Operativa",
+    title: "Confiabilidad Operativa Industrial",
     description: "Implementamos sistemas de control bajo estrictas normativas de seguridad y calidad industrial."
   },
   {
@@ -21,7 +21,7 @@ const features = [
   {
     id: 4,
     icon: <Headset className="w-7 md:w-10 h-7 md:h-10" />,
-    title: "Soporte Técnico",
+    title: "Soporte Técnico Personalizado",
     description: "Atendemos emergencias para garantizar la continuidad de tu operación."
   }
 ]

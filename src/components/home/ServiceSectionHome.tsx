@@ -15,7 +15,7 @@ export default function ServiceSectionHome() {
           <Link
             key={service.id}
             to={`/servicios/${service.slug}`}
-            className="group block hover:no-underline bg-gray-100 rounded-2xl p-5"
+            className="group block hover:no-underline bg-primary rounded-2xl p-5"
             aria-label={`Ver más detalles de ${service.title}`}
           >
             <div className="flex flex-col md:flex-row gap-5 rounded-lg items-stretch">
@@ -26,8 +26,8 @@ export default function ServiceSectionHome() {
                 />
               </div>
               <div className="flex flex-col flex-1 space-y-5">
-                <h3 className="text-lg text-primary uppercase font-bold pt-4 md:pt-4">{service.title}</h3>
-                <p className="text-gray-600 text-[15px]">{service.description}</p>
+                <h3 className="text-lg text-white uppercase font-bold pt-4 md:pt-4">{service.title}</h3>
+                <p className="text-white text-[15px]">{service.description}</p>
                 <div className="flex items-center gap-2 mt-auto bg-white w-fit px-4 rounded-2xl py-2">
                   <p className="uppercase text-primary text-sm font-bold">
                     Conoce más
