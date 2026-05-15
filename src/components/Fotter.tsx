@@ -61,7 +61,7 @@ export default function Fotter() {
           <div className="flex flex-col items-center flex-1">
             <h3 className="text-primary text-sm md:text-lg font-semibold uppercase">Dirección</h3>
             <p className="text-gray-600 flex items-center justify-center gap-2 pt-2 text-sm md:text-base">
-              <MapPin className="w-6 h-6 text-primary" /> Lima, Perú
+              <MapPin className="w-6 h-6 text-primary" /> Augusto Tamayo Vargas 119, Barranco - Lima - Perú
             </p>
           </div>
           <div className="hidden md:block w-px bg-primary mx-8"></div>

@@ -57,7 +57,7 @@ export default function ContactSectionPage() {
               </a>
               <div className="flex items-center gap-4">
                 <MapPin className="w-6 h-6 text-primary" />
-                <span className="text-gray-600 text-sm md:text-base">Lima, Perú</span>
+                <span className="text-gray-600 text-sm md:text-base">Augusto Tamayo Vargas 119, Barranco - Lima - Perú</span>
               </div>
             </div>
           </div>
