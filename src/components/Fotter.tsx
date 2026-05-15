@@ -15,17 +15,18 @@ export default function Fotter() {
           <div className="flex flex-col items-center flex-1 gap-1">
             <h3 className="text-primary text-sm md:text-lg font-semibold uppercase">Contactanos</h3>
             <a
-              href="mailto:info@mecatronix.com"
+              href="mailto:compras@mecatronixperu.com
+"
               className="
                   flex items-center gap-4 group cursor-pointer pb-1 relative w-fit
                   text-gray-600 transition-colors duration-200 font-medium
                   hover:text-primary
                 "
-              aria-label="Enviar correo a info@mecatronix.com"
+              aria-label="Enviar correo a compras@mecatronixperu.com"
             >
               <Mail className="w-6 h-6 text-primary" />
               <span className="relative text-sm md:text-base z-10">
-                info@mecatronix.com
+                compras@mecatronixperu.com
               </span>
               <span
                 className="
