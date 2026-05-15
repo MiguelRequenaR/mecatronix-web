@@ -85,7 +85,7 @@ export default function ServiceDetailPage() {
                     <div className="flex" data-aos="fade-up" data-aos-delay="600">
                       <Link
                         className="relative overflow-hidden bg-transparent px-6 py-2 uppercase cursor-pointer font-bold border border-primary group transition-colors rounded-full duration-500 hover:text-primary text-sm text-primary md:text-white md:border-white"
-                        to="/servicios"
+                        to="/contacto"
                       >
                         <span
                           className="
