@@ -50,7 +50,7 @@ const services: Service[] = [
     slug: "mantenimiento-predictivo",
     description: "Mantenimiento predictivo de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Mantenimiento predictivo de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con el mantenimiento predictivo lo que queremos es anticipar las fallas antes de que ocurran, utilizando datos en tiempo real para tomar decisiones de mantenimiento en el momento adecuado. Este enfoque se basa en el análisis de señales de salud del equipo, como vibraciones, temperaturas, presiones y otros parámetros, para identificar anomalías que indiquen un deterioro progresivo.",
     features: [
       {
         icon: "activity",
@@ -76,7 +76,7 @@ const services: Service[] = [
     slug: "mantenimiento-correctivo",
     description: "Mantenimiento correctivo de equipos industriales para reparar fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Mantenimiento correctivo de equipos industriales para reparar fallas y garantizar la continuidad operativa.",
+      "Con el mantenimiento correctivo lo que queremos es reparar las fallas que ya han ocurrido en los equipos, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de mantenimiento se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El mantenimiento correctivo se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "hammer",
@@ -103,7 +103,7 @@ const services: Service[] = [
     description:
       "Auxilio técnico y atención de emergencias para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Auxilio técnico y atención de emergencias para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con el auxilio técnico y atención de emergencias lo que queremos es brindar apoyo inmediato a los equipos industriales cuando se presentan fallas o emergencias, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El auxilio técnico y atención de emergencias se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "phone",
@@ -130,7 +130,7 @@ const services: Service[] = [
     description:
       "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con la venta e instalación de repuestos mecánicos, eléctricos y electrónicos lo que queremos es proporcionar componentes de calidad para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La venta e instalación de repuestos mecánicos, eléctricos y electrónicos se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "package",
@@ -157,7 +157,7 @@ const services: Service[] = [
     description:
       "Instalación, montaje y puesta en marcha de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Instalación, montaje y puesta en marcha de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con la instalación, montaje y puesta en marcha de equipos industriales lo que queremos es proporcionar componentes de calidad para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La instalación, montaje y puesta en marcha de equipos industriales se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "factory",
@@ -184,7 +184,7 @@ const services: Service[] = [
     description:
       "Instalación de sistemas de ventilación y extracción de aire para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Instalación de sistemas de ventilación y extracción de aire para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con la instalación de sistemas de ventilación y extracción de aire lo que queremos es proporcionar componentes de calidad para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La instalación de sistemas de ventilación y extracción de aire se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "fan",
@@ -212,7 +212,7 @@ const services: Service[] = [
     description:
       "Capacitación técnica industrial para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Capacitación técnica industrial para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con la capacitación técnica industrial lo que queremos es proporcionar conocimientos y habilidades para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La capacitación técnica industrial se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "bookOpen",
@@ -239,7 +239,7 @@ const services: Service[] = [
     description:
       "Diseño e Implementación de proyectos de automatización para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Diseño e Implementación de proyectos de automatización para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con el diseño e implementación de proyectos de automatización lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El diseño e implementación de proyectos de automatización se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "cpu",
@@ -266,7 +266,7 @@ const services: Service[] = [
     description:
       "Modificaciones en línea de producción para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Modificaciones en línea de producción para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con las modificaciones en línea de producción lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. Las modificaciones en línea de producción se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "gitBranch",
@@ -293,7 +293,7 @@ const services: Service[] = [
     description:
       "Instalación de camaras de conservación y congelación para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Instalación de camaras de conservación y congelación para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con la instalación de camaras de conservación y congelación lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La instalación de camaras de conservación y congelación se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "snowflake",
@@ -320,7 +320,7 @@ const services: Service[] = [
     description:
       "Diseño e instalación de tableros eléctricos industriales para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Diseño e instalación de tableros eléctricos industriales para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con el diseño e instalación de tableros eléctricos industriales lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El diseño e instalación de tableros eléctricos industriales se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "layers",
@@ -347,7 +347,7 @@ const services: Service[] = [
     description:
       "Mantenimiento de bombas de agua para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Mantenimiento de bombas de agua para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con el mantenimiento de bombas de agua lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El mantenimiento de bombas de agua se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "activity",
@@ -374,7 +374,7 @@ const services: Service[] = [
     description:
       "Mantenimiento de grupos electrógenos para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Mantenimiento de grupos electrógenos para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Con el mantenimiento de grupos electrógenos lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El mantenimiento de grupos electrógenos se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "zap",
