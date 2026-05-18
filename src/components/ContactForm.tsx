@@ -22,11 +22,11 @@ export default function ContactForm() {
       alert("El teléfono debe tener 9 dígitos.")
       return
     }
-    if (!/^\d{11}$/.test(ruc)) {
+    if (ruc && !/^\d{11}$/.test(ruc)) {
       alert("El RUC debe tener 11 dígitos.")
       return
     }
-    if (!/^[a-zA-Z0-9\s]+$/.test(razon_social)) {
+    if (razon_social && !/^[a-zA-Z0-9\s]+$/.test(razon_social)) {
       alert("La razón social debe contener solo letras.")
       return
     }
@@ -95,7 +95,6 @@ export default function ContactForm() {
             type="text"
             id="ruc"
             name="ruc"
-            required
             placeholder="RUC"
             className="w-full pl-10 text-base text-primary placeholder:text-slate-300 focus:outline-none"
           />
@@ -110,7 +109,6 @@ export default function ContactForm() {
             type="text"
             id="razon_social"
             name="razon_social"
-            required
             placeholder="Razón Social"
             className="w-full pl-10 text-base text-primary placeholder:text-slate-300 focus:outline-none"
           />

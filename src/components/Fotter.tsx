@@ -68,8 +68,12 @@ export default function Fotter() {
           <div className="flex flex-col items-center flex-1">
             <h3 className="text-primary text-sm md:text-lg uppercase font-semibold">Nuestras Redes Sociales</h3>
             <div className="flex items-center justify-center gap-4 pt-3">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png" alt="facebook" className="w-6 h-6 cursor-pointer" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="instagram" className="w-6 h-6 cursor-pointer" />
+              <a href="https://www.facebook.com/profile.php?id=100063068537205&locale=bg_BG#" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png" alt="facebook" className="w-6 h-6 cursor-pointer" />
+              </a>
+              <a href="https://www.instagram.com/mecatronixperu/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="instagram" className="w-6 h-6 cursor-pointer" />
+              </a>
               <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="linkedin" className="w-6 h-6 cursor-pointer" />
               <img src="https://i.pinimg.com/originals/e4/15/d6/e415d6bd27900cc066d0b8b23a7f1055.png" alt="tiktok" className="w-7 h-7 cursor-pointer" />
             </div>

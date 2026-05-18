@@ -101,9 +101,9 @@ const services: Service[] = [
     title: "Auxilio técnico y atención de emergencias",
     slug: "auxilio-tecnico-y-atencion-de-emergencias",
     description:
-      "Auxilio técnico y atención de emergencias para equipos industriales para prevenir fallas y garantizar el funcionamiento continuo de sus instalaciones.",
+      "Respuesta inmediata ante fallas imprevistas para restablecer la operatividad de tus equipos industriales en el menor tiempo posible.",
     longDescription:
-      "Con el auxilio técnico y atención de emergencias lo que queremos es brindar apoyo inmediato a los equipos industriales cuando se presentan fallas o emergencias, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El auxilio técnico y atención de emergencias se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Nuestro servicio de auxilio técnico está diseñado para actuar con rapidez frente a emergencias. Sabemos que el tiempo de inactividad cuesta dinero, por lo que acudimos de manera inmediata ante cualquier avería o falla crítica, diagnosticando y solucionando el problema de forma correctiva para que su planta retome su funcionamiento normal y minimice las pérdidas de producción.",
     features: [
       {
         icon: "phone",
@@ -128,9 +128,9 @@ const services: Service[] = [
     title: "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos",
     slug: "venta-e-instalacion-de-repuestos-mecanicos-electricos-y-electronicos",
     description:
-      "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Suministro e instalación rápida de repuestos mecánicos, eléctricos y electrónicos originales para garantizar la compatibilidad y durabilidad de sus equipos.",
     longDescription:
-      "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos, proporcionamos componentes de calidad para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La venta e instalación de repuestos mecánicos, eléctricos y electrónicos se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Contamos con un amplio catálogo de componentes de alta calidad para diversas maquinarias de la industria. No solo le proveemos la pieza exacta que necesita, sino que nuestro equipo técnico se encarga de la instalación precisa y calibración. Esto asegura una integración perfecta, extiende la vida útil de su maquinaria y previene fallas recurrentes por desgaste.",
     features: [
       {
         icon: "package",
@@ -155,9 +155,9 @@ const services: Service[] = [
     title: "Instalación, montaje y puesta en marcha de equipos industriales",
     slug: "instalacion-montaje-y-puesta-en-marcha-de-equipos-industriales",
     description:
-      "Instalación, montaje y puesta en marcha de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Integración segura y eficiente de nueva maquinaria a su línea de producción, desde el ensamblaje técnico hasta las pruebas de funcionamiento finales.",
     longDescription:
-      "Con la instalación, montaje y puesta en marcha de equipos industriales lo que queremos es proporcionar componentes de calidad para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La instalación, montaje y puesta en marcha de equipos industriales se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Aseguramos el éxito de su inversión desde el primer día. Nos encargamos del montaje riguroso y la instalación de sus nuevos equipos industriales siguiendo los más altos estándares y normativas del fabricante. Realizamos las pruebas en vacío y con carga (puesta en marcha) para garantizar que la maquinaria opere en sus parámetros óptimos de seguridad y eficiencia antes de iniciar su producción.",
     features: [
       {
         icon: "factory",
@@ -182,9 +182,9 @@ const services: Service[] = [
     title: "Instalación de sistemas de ventilación y extracción de aire",
     slug: "instalacion-de-sistemas-de-ventilacion-y-extraccion-de-aire",
     description:
-      "Instalación de sistemas de ventilación y extracción de aire para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Soluciones de climatización y purificación de aire industrial para mantener un entorno de trabajo seguro y proteger la vida útil de sus máquinas.",
     longDescription:
-      "Con la instalación de sistemas de ventilación y extracción de aire lo que queremos es proporcionar componentes de calidad para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La instalación de sistemas de ventilación y extracción de aire se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Diseñamos e instalamos sistemas robustos de ventilación y extracción adaptados a las exigencias térmicas y ambientales de su planta. Estos sistemas son vitales para disipar el calor generado por los equipos, extraer grasas, polvo o gases, mejorando la calidad del aire, cumpliendo con las normativas de sanidad y evitando el sobrecalentamiento de su maquinaria.",
     features: [
       {
         icon: "fan",
@@ -210,9 +210,9 @@ const services: Service[] = [
     title: "Capacitación técnica industrial",
     slug: "capacitacion-tecnica-industrial",
     description:
-      "Capacitación técnica industrial para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Formación especializada para sus operarios en el manejo correcto, limpieza y cuidado de los equipos para maximizar su rendimiento.",
     longDescription:
-      "Con la capacitación técnica industrial lo que queremos es proporcionar conocimientos y habilidades para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La capacitación técnica industrial se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Empoderamos a su personal mediante programas de formación técnica enfocados en la correcta operación y el mantenimiento autónomo de la maquinaria. Un equipo capacitado es la mejor estrategia preventiva: maximiza el rendimiento productivo, reduce errores humanos y previene averías costosas causadas por un manejo inadecuado de la tecnología industrial.",
     features: [
       {
         icon: "bookOpen",
@@ -237,9 +237,9 @@ const services: Service[] = [
     title: "Diseño e Implementación de proyectos de automatización",
     slug: "diseno-e-implementacion-de-proyectos-de-automatizacion",
     description:
-      "Diseño e Implementación de proyectos de automatización para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Modernización de procesos industriales mediante tecnología de control y automatización para maximizar la eficiencia y reducir costos operativos.",
     longDescription:
-      "Con el diseño e implementación de proyectos de automatización lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El diseño e implementación de proyectos de automatización se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Transformamos su industria integrando tecnologías avanzadas (PLC, HMI, sensores, neumática) que optimizan y controlan sus procesos de manera automática. Estudiamos su línea de producción para diseñar soluciones a la medida que reducen la intervención manual, minimizan los tiempos muertos, disminuyen el margen de error y aumentan significativamente la rentabilidad y estandarización de su producto.",
     features: [
       {
         icon: "cpu",
@@ -264,9 +264,9 @@ const services: Service[] = [
     title: "Modificaciones en línea de producción",
     slug: "modificaciones-en-linea-de-produccion",
     description:
-      "Modificaciones en línea de producción para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Reingeniería y adaptación de sus líneas de procesos actuales para aumentar la capacidad, flexibilidad y velocidad productiva.",
     longDescription:
-      "Con las modificaciones en línea de producción lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. Las modificaciones en línea de producción se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Adaptamos sus instalaciones actuales a las nuevas y crecientes demandas del mercado. Ya sea para integrar nuevas máquinas, optimizar el flujo de trabajo o escalar el volumen de producción, realizamos modificaciones estructurales, mecánicas y eléctricas en su línea con la mínima interrupción posible, garantizando una transición fluida hacia una operación superior.",
     features: [
       {
         icon: "gitBranch",
@@ -291,9 +291,9 @@ const services: Service[] = [
     title: "Instalación de camaras de conservación y congelación",
     slug: "instalacion-de-camaras-de-conservacion-y-congelacion",
     description:
-      "Instalación de camaras de conservación y congelación para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Proyectos de refrigeración industrial a medida para garantizar la cadena de frío, frescura e inocuidad de sus productos.",
     longDescription:
-      "Con la instalación de camaras de conservación y congelación lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La instalación de camaras de conservación y congelación se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Somos especialistas en el cálculo térmico, diseño e instalación de cámaras frigoríficas y túneles de congelación de alta eficiencia energética. Utilizamos paneles termoaislantes y equipos de refrigeración de última generación para asegurar temperaturas precisas y estables, garantizando la perfecta conservación de alimentos, masas, insumos o productos termosensibles.",
     features: [
       {
         icon: "snowflake",
@@ -318,9 +318,9 @@ const services: Service[] = [
     title: "Diseño e instalación de tableros eléctricos industriales",
     slug: "diseno-e-instalacion-de-tableros-electricos-industriales",
     description:
-      "Diseño e instalación de tableros eléctricos industriales para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Soluciones de control y distribución de energía seguras, diseñadas bajo estrictas normativas eléctricas para proteger su inversión.",
     longDescription:
-      "Con el diseño e instalación de tableros eléctricos industriales lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El diseño e instalación de tableros eléctricos industriales se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Fabricamos e instalamos tableros eléctricos de fuerza, control y automatización adaptados a la carga y exigencia energética de su planta. Nuestros diseños priorizan la seguridad industrial, la facilidad de mantenimiento y la protección de sus motores y equipos contra sobrecargas, caídas de tensión o cortocircuitos, asegurando un suministro eléctrico continuo y confiable.",
     features: [
       {
         icon: "layers",
@@ -345,9 +345,9 @@ const services: Service[] = [
     title: "Mantenimiento de bombas de agua",
     slug: "mantenimiento-de-bombas-de-agua",
     description:
-      "Mantenimiento de bombas de agua para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Servicio preventivo y correctivo de sistemas de bombeo industrial para asegurar un flujo constante y una presión óptima en sus procesos.",
     longDescription:
-      "Con el mantenimiento de bombas de agua lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El mantenimiento de bombas de agua se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Realizamos el diagnóstico, reparación y mantenimiento especializado de bombas de agua (centrífugas, periféricas, sumergibles) y sistemas hidroneumáticos. Inspeccionamos sellos mecánicos, rodamientos, alineación de ejes y consumo eléctrico para prevenir fugas, pérdida de presión o fallas inesperadas, garantizando el suministro continuo de fluidos vitales para su planta.",
     features: [
       {
         icon: "activity",
@@ -372,9 +372,9 @@ const services: Service[] = [
     title: "Mantenimiento de grupos electrógenos",
     slug: "mantenimiento-de-grupos-electrogenos",
     description:
-      "Mantenimiento de grupos electrógenos para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Cuidado experto de sus generadores eléctricos para garantizar que la energía de respaldo nunca falle ante un corte de suministro.",
     longDescription:
-      "Con el mantenimiento de grupos electrógenos lo que queremos es proporcionar soluciones integrales para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El mantenimiento de grupos electrógenos se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "El respaldo energético es crítico para la continuidad de la industria. Nuestro servicio incluye la revisión integral de motores diésel/gas, cambio de filtros, análisis de fluidos, revisión de alternadores y pruebas del panel de transferencia automática (tablero de transferencia). Con este mantenimiento preventivo, garantizamos que sus generadores arranquen de inmediato, protegiendo su producción ante cualquier apagón.",
     features: [
       {
         icon: "zap",

@@ -21,8 +21,8 @@ export default function PrivacyPolicyPage() {
             <p>
               En Mecatronix Perú recopilamos información personal que usted nos proporciona voluntariamente
               al completar formularios de contacto en nuestro sitio web. Esta información puede incluir:
-              nombre completo, dirección de correo electrónico, número de teléfono y el contenido del
-              mensaje enviado.
+              nombre completo, dirección de correo electrónico, número de teléfono, RUC (Registro Único
+              de Contribuyente), Razón Social o nombre de la compañía, y contenido del mensaje enviado.
             </p>
           </div>
 
@@ -67,8 +67,8 @@ export default function PrivacyPolicyPage() {
             <p>
               Usted tiene derecho a acceder, rectificar o eliminar sus datos personales en cualquier
               momento. Para ejercer estos derechos, puede contactarnos a través de{" "}
-              <a href="mailto:info@mecatronix.com" className="text-primary underline">
-                info@mecatronix.com
+              <a href="mailto:contacto@mecatronixperu.com" className="text-primary underline">
+                contacto@mecatronixperu.com
               </a>
               .
             </p>
