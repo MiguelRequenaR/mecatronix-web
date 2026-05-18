@@ -26,13 +26,13 @@ export default function ProjectVideoButton() {
         className="fixed bottom-6 left-6 md:left-4 md:top-1/2 md:bottom-auto md:right-auto z-50 flex w-14 md:-translate-y-1/2 translate-y-0 flex-col items-center justify-center gap-3 rounded-full border border-primary bg-white/95 py-4 text-center text-xs font-black uppercase text-primary shadow-xl shadow-slate-900/10 backdrop-blur transition hover:bg-primary hover:text-white cursor-pointer"
         aria-label="Abrir modal de proyectos"
       >
+        <Play className="h-5 w-5" />
         <h4
           style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
           className="whitespace-nowrap md:text-base hidden md:block"
         >
           Proyectos
         </h4>
-        <Play className="h-5 w-5" />
       </button>
 
       {isOpen ? (
