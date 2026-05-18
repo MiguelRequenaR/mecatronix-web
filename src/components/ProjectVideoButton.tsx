@@ -21,7 +21,6 @@ export default function ProjectVideoButton() {
   }, [isOpen])
 
   const goTo = (index: number) => {
-    // Pausa y reinicia el video actual
     const current = videoRefs.current[currentIndex]
     if (current) {
       current.pause()
@@ -58,7 +57,7 @@ export default function ProjectVideoButton() {
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-3xl bg-black shadow-2xl"
+            className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-3xl bg-black shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
