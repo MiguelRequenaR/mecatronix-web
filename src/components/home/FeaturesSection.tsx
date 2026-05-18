@@ -22,7 +22,7 @@ const features = [
     id: 4,
     icon: <Headset className="w-7 md:w-10 h-7 md:h-10" />,
     title: "Soporte Técnico Especializado",
-    description: "Atendemos emergencias para garantizar la continuidad de tu operación."
+    description: "Atendemos emergencias para garantizar la continuidad de tus operaciones de manera eficiente."
   }
 ]
 
