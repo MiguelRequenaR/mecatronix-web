@@ -31,7 +31,7 @@ export default function ServicesList() {
             <img
               src={service.image}
               alt={service.title}
-              className="w-full md:h-[320px] object-cover rounded-3xl"
+              className="w-full md:h-100 object-cover rounded-3xl"
             />
             <p className="text-[15px] md:text-lg text-gray-500 leading-relaxed max-w-xl">
               {service.description}

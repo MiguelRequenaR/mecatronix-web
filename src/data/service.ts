@@ -124,13 +124,13 @@ const services: Service[] = [
   },
   {
     id: 5,
-    image: "https://www.emasa.pe/imagenes/repuestos-sistema-electrico-automotriz.jpg",
+    image: "https://i.ibb.co/v4dh7JWK/ventarepuestos.jpg",
     title: "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos",
     slug: "venta-e-instalacion-de-repuestos-mecanicos-electricos-y-electronicos",
     description:
       "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
     longDescription:
-      "Con la venta e instalación de repuestos mecánicos, eléctricos y electrónicos lo que queremos es proporcionar componentes de calidad para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La venta e instalación de repuestos mecánicos, eléctricos y electrónicos se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
+      "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos, proporcionamos componentes de calidad para los equipos industriales, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. La venta e instalación de repuestos mecánicos, eléctricos y electrónicos se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
       {
         icon: "package",
@@ -151,7 +151,7 @@ const services: Service[] = [
   },
   {
     id: 6,
-    image: "https://teamdem.com/images/servicios/puesta-en-marcha-de-equipos-industriales.webp",
+    image: "https://i.ibb.co/Q3jDggkW/puestaenmarca.jpg",
     title: "Instalación, montaje y puesta en marcha de equipos industriales",
     slug: "instalacion-montaje-y-puesta-en-marcha-de-equipos-industriales",
     description:
@@ -314,7 +314,7 @@ const services: Service[] = [
   },
   {
     id: 12,
-    image: "https://siocorp.pe/wp-content/uploads/2023/12/t-de-fuerza.png",
+    image: "https://i.ibb.co/3PGJf2N/dise-oinstalacion.jpg",
     title: "Diseño e instalación de tableros eléctricos industriales",
     slug: "diseno-e-instalacion-de-tableros-electricos-industriales",
     description:
