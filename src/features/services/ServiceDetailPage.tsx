@@ -5,6 +5,7 @@ import AOS from "aos"
 import services, { getServiceBySlugParam } from "@/data/service"
 import { getServiceFeatureIcon } from "@/data/serviceFeatureIcons"
 import ContactSectionService from "@/components/services/ContactSectionService"
+import GalleryCarousel from "@/components/GalleryCarousel"
 
 export default function ServiceDetailPage() {
 
@@ -19,7 +20,7 @@ export default function ServiceDetailPage() {
     const copy = [...rest]
     for (let i = copy.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1))
-      ;[copy[i], copy[j]] = [copy[j], copy[i]]
+        ;[copy[i], copy[j]] = [copy[j], copy[i]]
     }
     return copy.slice(0, 9)
   }, [service])
@@ -162,13 +163,10 @@ export default function ServiceDetailPage() {
             <div className="order-1 min-w-0 md:order-2" data-aos="fade-up" data-aos-delay="200">
               <h2 className="text-2xl font-bold uppercase text-primary md:text-3xl">Galería</h2>
               <hr className="mt-3 border-0 border-t-2 border-primary" />
-              <div className="mt-4 overflow-hidden rounded-3xl md:mt-6">
-                <img
-                  src={service.image}
-                  alt={`Galería — ${service.title}`}
-                  className="h-auto max-h-[min(420px,65vh)] w-full object-cover sm:max-h-[min(480px,70vh)] md:max-h-[min(520px,70vh)]"
-                />
-              </div>
+              <GalleryCarousel
+                images={service.gallery.length ? service.gallery : [service.image]}
+                title={service.title}
+              />
             </div>
           </div>
         </section>

@@ -10,6 +10,7 @@ export type Service = {
   id: number
   image: string
   title: string
+  gallery: string[]
   slug: string
   description: string
   longDescription: string
@@ -20,6 +21,16 @@ const services: Service[] = [
   {
     id: 1,
     image: "https://i.ibb.co/mCVTx2qM/mantenimientopreventivo.jpg",
+    gallery: [
+      "https://i.ibb.co/mCVTx2qM/mantenimientopreventivo.jpg",
+      "https://i.ibb.co/qMVWNTB0/preventivo7.jpg",
+      "https://i.ibb.co/nqTfNv3X/preventivo6.jpg",
+      "https://i.ibb.co/svmXPFK6/preventivo5.jpg",
+      "https://i.ibb.co/DHPnhRVR/preventivo4.jpg",
+      "https://i.ibb.co/zhDGM2Wm/preventivo3.jpg",
+      "https://i.ibb.co/rfmPcrxF/preventivo2.jpg",
+      "https://i.ibb.co/TBXDJkCg/preventivo1.jpg",
+    ],
     title: "Mantenimiento Preventivo",
     slug: "mantenimiento-preventivo",
     description: "Programas de revisión periódica diseñados para prolongar la vida útil de su maquinaria. Reducimos el riesgo de paradas imprevistas y optimizamos el rendimiento constante de su planta industrial.",
@@ -46,6 +57,9 @@ const services: Service[] = [
   {
     id: 2,
     image: "https://i.ibb.co/wZg90368/mantenimientopredictivo.jpg",
+    gallery: [
+
+    ],
     title: "Mantenimiento Predictivo",
     slug: "mantenimiento-predictivo",
     description: "Monitoreo avanzado y diagnóstico en tiempo real de sus equipos. Detectamos anomalías, desgastes y vibraciones antes de que se conviertan en fallas críticas, asegurando la máxima disponibilidad operativa.",
@@ -72,6 +86,16 @@ const services: Service[] = [
   {
     id: 3,
     image: "https://i.ibb.co/yBf5b7Rz/mantenimientocorrectivo.jpg",
+    gallery: [
+      "https://i.ibb.co/yBf5b7Rz/mantenimientocorrectivo.jpg",
+      "https://i.ibb.co/7xqdRwKJ/correctivo1.jpg",
+      "https://i.ibb.co/TBCWqmRh/correctivo2.jpg",
+      "https://i.ibb.co/vxqp6w52/correctivo3.jpg",
+      "https://i.ibb.co/FLLg3Mh7/correctivo4.jpg",
+      "https://i.ibb.co/ZzknDMkH/correctivo5.jpg",
+      "https://i.ibb.co/ZpfxZr1r/correctivo6.jpg",
+      "https://i.ibb.co/CptMwGx8/correctivo7.jpg",
+    ],
     title: "Mantenimiento Correctivo",
     slug: "mantenimiento-correctivo",
     description: "Respuesta técnica rápida y especializada para la reparación de averías súbitas. Solucionamos fallas mecánicas, eléctricas y electrónicas para restaurar su línea de producción en el menor tiempo posible.",
@@ -98,6 +122,15 @@ const services: Service[] = [
   {
     id: 4,
     image: "https://i.ibb.co/Rk4j8y7b/auxilioindustrial.jpg",
+    gallery: [
+      "https://i.ibb.co/Rk4j8y7b/auxilioindustrial.jpg",
+      "https://i.ibb.co/DD5TL1JV/auxilio6.jpg",
+      "https://i.ibb.co/spxPXc8y/auxilio5.jpg",
+      "https://i.ibb.co/Ndn94WWF/auxilio4.jpg",
+      "https://i.ibb.co/xRHYhcs/auxilio3.jpg",
+      "https://i.ibb.co/RTcxpDyy/auxilio2.jpg",
+      "https://i.ibb.co/gMdHhRqk/auxilio1.jpg",
+    ],
     title: "Auxilio técnico y atención de emergencias",
     slug: "auxilio-tecnico-y-atencion-de-emergencias",
     description:
@@ -125,6 +158,9 @@ const services: Service[] = [
   {
     id: 5,
     image: "https://i.ibb.co/v4dh7JWK/ventarepuestos.jpg",
+    gallery: [
+
+    ],
     title: "Venta e instalación de repuestos mecánicos, eléctricos y electrónicos",
     slug: "venta-e-instalacion-de-repuestos-mecanicos-electricos-y-electronicos",
     description:
@@ -152,6 +188,9 @@ const services: Service[] = [
   {
     id: 6,
     image: "https://i.ibb.co/Q3jDggkW/puestaenmarca.jpg",
+    gallery: [
+
+    ],
     title: "Instalación, montaje y puesta en marcha de equipos industriales",
     slug: "instalacion-montaje-y-puesta-en-marcha-de-equipos-industriales",
     description:
@@ -179,6 +218,13 @@ const services: Service[] = [
   {
     id: 7,
     image: "https://gpooasis.com/wp-content/uploads/2020/11/Tipos-de-sistema-de-ventilacion.jpg",
+    gallery: [
+      "https://gpooasis.com/wp-content/uploads/2020/11/Tipos-de-sistema-de-ventilacion.jpg",
+      "https://i.ibb.co/4nTb29VH/ventilacion4.jpg",
+      "https://i.ibb.co/5W2PcfrX/ventilacion3.jpg",
+      "https://i.ibb.co/4ggp220z/ventilacion2.jpg",
+      "https://i.ibb.co/nqPm4Sb9/ventilacion.jpg"
+    ],
     title: "Instalación de sistemas de ventilación y extracción de aire",
     slug: "instalacion-de-sistemas-de-ventilacion-y-extraccion-de-aire",
     description:
@@ -207,6 +253,9 @@ const services: Service[] = [
     id: 8,
     image:
       "https://20963350.fs1.hubspotusercontent-na1.net/hubfs/20963350/Imported_Blog_Media/Capacitacion-industrial-igual-a-seguridad-para-el-personal-2.png",
+    gallery: [
+
+    ],
     title: "Capacitación técnica industrial",
     slug: "capacitacion-tecnica-industrial",
     description:
@@ -234,6 +283,9 @@ const services: Service[] = [
   {
     id: 9,
     image: "https://i.ibb.co/rKkG6pcR/implementacionauto.jpg",
+    gallery: [
+
+    ],
     title: "Diseño e Implementación de proyectos de automatización",
     slug: "diseno-e-implementacion-de-proyectos-de-automatizacion",
     description:
@@ -261,6 +313,9 @@ const services: Service[] = [
   {
     id: 10,
     image: "https://aggity.com/wp-content/uploads/2025/11/balanceo-de-lineas.webp",
+    gallery: [
+
+    ],
     title: "Modificaciones en línea de producción",
     slug: "modificaciones-en-linea-de-produccion",
     description:
@@ -288,6 +343,9 @@ const services: Service[] = [
   {
     id: 11,
     image: "https://manpan.com/wp-content/uploads/2024/10/camaras-conservacion-congelacion-panaderia-2.jpg",
+    gallery: [
+
+    ],
     title: "Instalación de camaras de conservación y congelación",
     slug: "instalacion-de-camaras-de-conservacion-y-congelacion",
     description:
@@ -315,6 +373,9 @@ const services: Service[] = [
   {
     id: 12,
     image: "https://i.ibb.co/3PGJf2N/dise-oinstalacion.jpg",
+    gallery: [
+
+    ],
     title: "Diseño e instalación de tableros eléctricos industriales",
     slug: "diseno-e-instalacion-de-tableros-electricos-industriales",
     description:
@@ -342,6 +403,9 @@ const services: Service[] = [
   {
     id: 13,
     image: "https://www.iprecom.com/wp-content/uploads/2019/07/bomba-de-agua.jpg",
+    gallery: [
+
+    ],
     title: "Mantenimiento de bombas de agua",
     slug: "mantenimiento-de-bombas-de-agua",
     description:
@@ -369,6 +433,9 @@ const services: Service[] = [
   {
     id: 14,
     image: "https://mantenimientoindustrialcrm.com/wp-content/uploads/2020/10/generadores-electricos.jpg",
+    gallery: [
+
+    ],
     title: "Mantenimiento de grupos electrógenos",
     slug: "mantenimiento-de-grupos-electrogenos",
     description:

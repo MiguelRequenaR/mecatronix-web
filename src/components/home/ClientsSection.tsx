@@ -7,7 +7,7 @@ const clients = [
   },
   {
     id: 2,
-    image: "https://images.seeklogo.com/logo-png/40/1/supermercados-peruanos-logo-png_seeklogo-400077.png",
+    image: "https://www.greatplacetowork.com.pe/images/lists/las-mejores-2018/supermercados-peruanos/logo-120.png",
     name: "Super Mercados Peruanos S.A."
   },
   {
@@ -22,12 +22,12 @@ const clients = [
   },
   {
     id: 5,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrIRSJ9MSxt-URKR9KcUo34JStzshFLQA8eg&s",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp3i9j2_QvDAmFEXN451R9KXqYRbVgPgarpw&s",
     name: "Las Delicias"
   },
   {
     id: 6,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmPAMmBEMxg6-RUfVRweWizYDoU9RFIGbelw&s",
+    image: "https://i.ibb.co/Q38nXBxs/logo1.jpg",
     name: "Tortatti"
   },
   {
