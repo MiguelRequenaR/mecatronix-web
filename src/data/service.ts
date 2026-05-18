@@ -233,7 +233,7 @@ const services: Service[] = [
   },
   {
     id: 9,
-    image: "https://sepiia.run/wp-content/uploads/2025/02/tipos-de-procesos-automatizados-sepiia.webp",
+    image: "https://i.ibb.co/rKkG6pcR/implementacionauto.jpg",
     title: "Diseño e Implementación de proyectos de automatización",
     slug: "diseno-e-implementacion-de-proyectos-de-automatizacion",
     description:

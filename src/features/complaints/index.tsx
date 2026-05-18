@@ -29,7 +29,7 @@ export default function ComplaintsBookPage() {
     <>
       <SEO
         title="Libro de Reclamaciones | Mecatronix Perú"
-        description="De conformidad con el Código de Protección y Defensa del Consumidor (Ley N° 29571), Mecatronix pone a disposición de sus clientes el presente Libro de Reclamaciones virtual. Complete el formulario a continuación para registrar su queja o reclamo."
+        description="De conformidad con el Código de Protección y Defensa del Consumidor (Ley N° 29571), Mecatronix Perú, pone a disposición de sus clientes el presente Libro de Reclamaciones virtual. Complete el formulario a continuación para registrar su queja o reclamo."
         url="https://www.mecatronixperu.com/libro-de-reclamaciones"
         image="https://www.mecatronixperu.com/ogImageMecatronix.png"
         type="website"
@@ -40,7 +40,7 @@ export default function ComplaintsBookPage() {
         </h1>
         <p className="text-base leading-relaxed mb-10" data-aos="fade-up" data-aos-delay="100">
           De conformidad con el Código de Protección y Defensa del Consumidor (Ley N° 29571),
-          Mecatronix pone a disposición de sus clientes el presente Libro de Reclamaciones virtual.
+          Mecatronix Perú pone a disposición de sus clientes el presente Libro de Reclamaciones virtual.
           Complete el formulario a continuación para registrar su queja o reclamo.
         </p>
 

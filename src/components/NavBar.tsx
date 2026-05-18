@@ -78,7 +78,7 @@ export default function NavBar() {
         {/* Close button */}
         <div className="flex justify-between items-center p-5">
           {/* <img src={logoMecatronix} alt="logo" className="w-[100px] h-auto" /> */}
-          <h1 className="text-2xl uppercase font-bold text-white">Mecatronix</h1>
+          <h1 className="text-2xl uppercase font-bold text-white">Mecatronix Perú</h1>
           <button
             onClick={() => setMenuOpen(false)}
             className="text-white"

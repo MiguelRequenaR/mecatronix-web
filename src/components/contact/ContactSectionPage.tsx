@@ -10,7 +10,7 @@ export default function ContactSectionPage() {
             <span className="text-primary text-sm font-bold uppercase">Contáctanos</span>
             <h2 className="text-primary text-lg md:text-3xl font-bold uppercase">¿Tienes alguna consulta? Escríbenos</h2>
             <p className="text-gray-600 text-sm md:text-base">
-              En Mecatronix, estamos comprometidos a brindar la mejor atención y solución a tus necesidades.
+              En Mecatronix Perú, estamos comprometidos a brindar la mejor atención y solución a tus necesidades.
             </p>
             <div className="flex flex-col gap-3 pt-2">
               <a

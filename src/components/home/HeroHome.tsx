@@ -22,13 +22,13 @@ const carouselImages = [
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1584809923235-fabdba83d1df?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://i.ibb.co/rGDp1Hrw/solucionesmecatronicas.png",
     title: "Soluciones \nMecatrónicas",
     description: "Desarrollamos e integramos sistemas electroneumáticos y servocontrolados a medida, logrando una sinergia perfecta entre mecánica, electrónica y software.",
   },
   {
     id: 5,
-    image: "https://images.unsplash.com/photo-1732714552116-399f828fa355?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://i.ibb.co/TM70q1pQ/solucioneselectronicas.jpg",
     title: "Soluciones \nEléctricas",
     description: "Diseño, montaje y puesta en marcha de tableros de automatización, control de motores con variadores de frecuencia y sistemas de fuerza para la industria.",
   },
@@ -60,7 +60,7 @@ export default function HeroHome() {
   }, [currentIndex]);
 
   return (
-    <section className="relative w-full h-[70vh] min-h-70 flex items-center overflow-hidden">
+    <section className="relative w-full h-[80vh] min-h-70 flex items-center overflow-hidden">
       {/* Contenedor de slides */}
       <div
         className="flex w-full h-full transition-transform duration-700 ease-in-out"

@@ -10,7 +10,7 @@ export type ComplaintsFormWhatsAppData = {
 
 export function complaintsWhatsappUrl(data: ComplaintsFormWhatsAppData): string {
   const text = [
-    "*Libro de Reclamaciones — Mecatronix*",
+    "*Libro de Reclamaciones — Mecatronix Perú*",
     "",
     `Nombre: ${data.name || "—"}`,
     `Teléfono: ${data.phone || "—"}`,

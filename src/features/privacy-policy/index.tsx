@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
           <div>
             <h2 className="text-xl font-semibold text-primary mb-2">1. Información que recopilamos</h2>
             <p>
-              En Mecatronix recopilamos información personal que usted nos proporciona voluntariamente
+              En Mecatronix Perú recopilamos información personal que usted nos proporciona voluntariamente
               al completar formularios de contacto en nuestro sitio web. Esta información puede incluir:
               nombre completo, dirección de correo electrónico, número de teléfono y el contenido del
               mensaje enviado.
@@ -39,7 +39,7 @@ export default function PrivacyPolicyPage() {
           <div>
             <h2 className="text-xl font-semibold text-primary mb-2">3. Compartición de datos</h2>
             <p>
-              Mecatronix no vende, alquila ni comparte su información personal con terceros, salvo que
+              Mecatronix Perú no vende, alquila ni comparte su información personal con terceros, salvo que
               sea requerido por ley o sea estrictamente necesario para la prestación del servicio
               solicitado.
             </p>
