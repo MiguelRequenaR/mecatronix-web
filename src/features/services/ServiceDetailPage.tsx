@@ -2,7 +2,7 @@ import SEO from "@/components/SEO"
 import { useEffect, useMemo } from "react"
 import { Link, Navigate, useParams } from "react-router-dom"
 import AOS from "aos"
-import { ListCheck } from "lucide-react"
+import { CircleCheck } from "lucide-react"
 import services, { getServiceBySlugParam } from "@/data/service"
 import { getServiceFeatureIcon } from "@/data/serviceFeatureIcons"
 import ContactSectionService from "@/components/services/ContactSectionService"
@@ -154,7 +154,7 @@ export default function ServiceDetailPage() {
                         to={`/servicios/${s.slug}`}
                         className="text-sm font-medium text-balance text-gray-700 transition-colors hover:text-primary md:text-base flex items-center gap-2"
                       >
-                        <ListCheck className="w-5 h-5 shrink-0" />
+                        <CircleCheck className="w-5 h-5 shrink-0" />
                         {s.title}
                       </Link>
                     </li>
