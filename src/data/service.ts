@@ -97,7 +97,7 @@ const services: Service[] = [
   },
   {
     id: 4,
-    image: "https://gamrentals.com/media/media-bd/imagenes/foto-bloque-mantenimiento-correctivo-1920x1280-1685964086.jpg",
+    image: "https://i.ibb.co/Rk4j8y7b/auxilioindustrial.jpg",
     title: "Auxilio técnico y atención de emergencias",
     slug: "auxilio-tecnico-y-atencion-de-emergencias",
     description:
