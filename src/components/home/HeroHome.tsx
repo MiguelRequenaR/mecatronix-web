@@ -5,8 +5,8 @@ const carouselImages = [
   {
     id: 1,
     image: "https://i.ibb.co/RGNvg6YF/herohome1.jpg",
-    title: "Especialistas en Maquinarias Gastronómicas",
-    description: "Proteja su inversión y evite interrupciones en su línea de producción. Brindamos mantenimiento especializado para maximizar la vida útil, seguridad y eficiencia de sus equipos gastronómicos."
+    title: "Especialistas en Equipos \nAlimentarios",
+    description: "Proteja su inversión y evite interrupciones en su producción. Más de 15 años de experiencia en equipos de panadería, pastelería y horeca."
   },
   {
     id: 2,
