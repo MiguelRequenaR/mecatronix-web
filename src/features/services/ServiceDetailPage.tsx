@@ -2,6 +2,7 @@ import SEO from "@/components/SEO"
 import { useEffect, useMemo } from "react"
 import { Link, Navigate, useParams } from "react-router-dom"
 import AOS from "aos"
+import { ListCheck } from "lucide-react"
 import services, { getServiceBySlugParam } from "@/data/service"
 import { getServiceFeatureIcon } from "@/data/serviceFeatureIcons"
 import ContactSectionService from "@/components/services/ContactSectionService"
@@ -145,14 +146,15 @@ export default function ServiceDetailPage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-[3fr_7fr] md:gap-12 lg:gap-16">
             <aside className="order-2 border-t border-stone-200 pt-8 md:order-1 md:border-t-0 md:pt-0 md:pr-4" data-aos="fade-up" data-aos-delay="100">
               <nav aria-label="Otros servicios">
-                <p className="mb-4 text-xs font-bold uppercase tracking-wide text-primary md:hidden">Otros servicios</p>
+                <p className="mb-4 text-xs font-bold uppercase tracking-wide text-primary">Otros servicios</p>
                 <ul className="flex flex-col gap-3 sm:gap-4 md:gap-5">
                   {otherServices.map((s) => (
                     <li key={s.slug}>
                       <Link
                         to={`/servicios/${s.slug}`}
-                        className="text-sm font-medium text-balance text-gray-700 transition-colors hover:text-primary md:text-base"
+                        className="text-sm font-medium text-balance text-gray-700 transition-colors hover:text-primary md:text-base flex items-center gap-2"
                       >
+                        <ListCheck className="w-5 h-5 shrink-0" />
                         {s.title}
                       </Link>
                     </li>
