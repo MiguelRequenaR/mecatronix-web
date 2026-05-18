@@ -4,27 +4,33 @@ import { ArrowRight, ArrowLeft } from "lucide-react"
 const carouselImages = [
   {
     id: 1,
-    image: "https://bivelectrics.cl/wp-content/uploads/2020/11/mantenimiento.jpg",
-    title: "Mantenimiento \nIndustrial",
-    description: "Brindamos mantenimiento preventivo y correctivo para mantener tus equipos operativos, seguros y con mayor vida útil.",
+    image: "https://i.ibb.co/RGNvg6YF/herohome1.jpg",
+    title: "Atención especializada en equipos de industria alimentaria, panadería, pastelería y gastronomía",
+    description: "Proteja su inversión y evite interrupciones en su línea de producción. Brindamos mantenimiento especializado para maximizar la vida útil, seguridad y eficiencia de sus equipos gastronómicos."
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1717386255773-a456c611dc4e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Automatización \nIndustrial",
-    description: "Implementamos sistemas de control y automatización para optimizar procesos y reducir tiempos de parada.",
+    image: "https://bivelectrics.cl/wp-content/uploads/2020/11/mantenimiento.jpg",
+    title: "Mantenimiento \nIndustrial",
+    description: "Garantizamos la máxima disponibilidad de su planta mediante estrategias preventivas y correctivas integrales, minimizando los tiempos de inactividad de su maquinaria.",
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1584809923235-fabdba83d1df?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Soluciones \nMecatrónicas",
-    description: "Integramos mecánica, electrónica y software para desarrollar soluciones eficientes adaptadas a tu operación.",
+    image: "https://images.unsplash.com/photo-1717386255773-a456c611dc4e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Automatización \nIndustrial",
+    description: "Modernizamos sus líneas de producción con sistemas de control inteligente. Aumente la eficiencia, reduzca errores y optimice sus procesos operativos al máximo.",
   },
   {
     id: 4,
+    image: "https://images.unsplash.com/photo-1584809923235-fabdba83d1df?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Soluciones \nMecatrónicas",
+    description: "Desarrollamos e integramos sistemas electroneumáticos y servocontrolados a medida, logrando una sinergia perfecta entre mecánica, electrónica y software.",
+  },
+  {
+    id: 5,
     image: "https://images.unsplash.com/photo-1732714552116-399f828fa355?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Soluciones \nEléctricas",
-    description: "Diseñamos y ejecutamos sistemas eléctricos en alta y baja tensión para plantas, comercios y proyectos residenciales.",
+    description: "Diseño, montaje y puesta en marcha de tableros de automatización, control de motores con variadores de frecuencia y sistemas de fuerza para la industria.",
   },
 ]
 
@@ -73,7 +79,7 @@ export default function HeroHome() {
               className="absolute inset-0 w-full h-full object-cover"
               loading={slide.id === 1 ? "eager" : "lazy"}
             />
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-black/60"></div>
 
             <div className="relative z-10 flex justify-center w-full h-full" data-aos="fade-up">
               <div className="flex flex-col max-w-7xl w-full px-4 md:px-0 justify-center">

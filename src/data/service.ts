@@ -19,10 +19,10 @@ export type Service = {
 const services: Service[] = [
   {
     id: 1,
-    image: "https://www.stelorder.com/wp-content/uploads/2023/08/mantenimiento-preventivo-portada.png",
+    image: "https://i.ibb.co/mCVTx2qM/mantenimientopreventivo.jpg",
     title: "Mantenimiento Preventivo",
     slug: "mantenimiento-preventivo",
-    description: "Mantenimiento preventivo de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+    description: "Programas de revisión periódica diseñados para prolongar la vida útil de su maquinaria. Reducimos el riesgo de paradas imprevistas y optimizamos el rendimiento constante de su planta industrial.",
     longDescription:
       "Con el mantenimiento preventivo lo que queremos es evitar o mitigar las consecuencias de una posible falla del equipo, previniendo las incidencias antes de que estas ocurran. Las tareas de mantenimiento preventivo incluyen acciones como cambiar piezas consumibles en desgaste, lubricación, ajustes, etc. El mantenimiento preventivo debe evitar los fallos en el equipo antes de que estos ocurran.",
     features: [
@@ -45,10 +45,10 @@ const services: Service[] = [
   },
   {
     id: 2,
-    image: "https://midias-sites.totvs.com/es/wp-content/uploads/2022/10/Mantenimiento-predictivo.jpg",
+    image: "https://i.ibb.co/wZg90368/mantenimientopredictivo.jpg",
     title: "Mantenimiento Predictivo",
     slug: "mantenimiento-predictivo",
-    description: "Mantenimiento predictivo de equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+    description: "Monitoreo avanzado y diagnóstico en tiempo real de sus equipos. Detectamos anomalías, desgastes y vibraciones antes de que se conviertan en fallas críticas, asegurando la máxima disponibilidad operativa.",
     longDescription:
       "Con el mantenimiento predictivo lo que queremos es anticipar las fallas antes de que ocurran, utilizando datos en tiempo real para tomar decisiones de mantenimiento en el momento adecuado. Este enfoque se basa en el análisis de señales de salud del equipo, como vibraciones, temperaturas, presiones y otros parámetros, para identificar anomalías que indiquen un deterioro progresivo.",
     features: [
@@ -71,10 +71,10 @@ const services: Service[] = [
   },
   {
     id: 3,
-    image: "https://www.tecsaqro.com.mx/wp-content/uploads/2018/09/mantenimiento-correctivo-1.jpg",
+    image: "https://i.ibb.co/yBf5b7Rz/mantenimientocorrectivo.jpg",
     title: "Mantenimiento Correctivo",
     slug: "mantenimiento-correctivo",
-    description: "Mantenimiento correctivo de equipos industriales para reparar fallas y garantizar la continuidad operativa.",
+    description: "Respuesta técnica rápida y especializada para la reparación de averías súbitas. Solucionamos fallas mecánicas, eléctricas y electrónicas para restaurar su línea de producción en el menor tiempo posible.",
     longDescription:
       "Con el mantenimiento correctivo lo que queremos es reparar las fallas que ya han ocurrido en los equipos, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de mantenimiento se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El mantenimiento correctivo se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [
@@ -97,11 +97,11 @@ const services: Service[] = [
   },
   {
     id: 4,
-    image: "https://gepcoformacion.es/wp-content/uploads/2024/11/gepco-formacion-primeros-laborales-3.jpg",
+    image: "https://gamrentals.com/media/media-bd/imagenes/foto-bloque-mantenimiento-correctivo-1920x1280-1685964086.jpg",
     title: "Auxilio técnico y atención de emergencias",
     slug: "auxilio-tecnico-y-atencion-de-emergencias",
     description:
-      "Auxilio técnico y atención de emergencias para equipos industriales para prevenir fallas y garantizar la continuidad operativa.",
+      "Auxilio técnico y atención de emergencias para equipos industriales para prevenir fallas y garantizar el funcionamiento continuo de sus instalaciones.",
     longDescription:
       "Con el auxilio técnico y atención de emergencias lo que queremos es brindar apoyo inmediato a los equipos industriales cuando se presentan fallas o emergencias, con el objetivo de restablecer su funcionamiento normal lo antes posible. Este tipo de servicio se realiza en respuesta a una falla o avería que ha interrumpido la operación del equipo. El auxilio técnico y atención de emergencias se caracteriza por ser reactiva, es decir, se realiza después de que el equipo ha fallado o ha presentado un problema.",
     features: [

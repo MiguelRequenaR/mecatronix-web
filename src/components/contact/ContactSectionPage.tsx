@@ -14,17 +14,17 @@ export default function ContactSectionPage() {
             </p>
             <div className="flex flex-col gap-3 pt-2">
               <a
-                href="mailto:compras@mecatronixperu.com"
+                href="mailto:contacto@mecatronixperu.com"
                 className="
                   flex items-center gap-4 group cursor-pointer pb-1 relative w-fit
                   text-gray-600 transition-colors duration-200 font-medium
                   hover:text-primary
                 "
-                aria-label="Enviar correo a compras@mecatronixperu.com"
+                aria-label="Enviar correo a contacto@mecatronixperu.com"
               >
                 <Mail className="w-6 h-6 text-primary" />
                 <span className="relative z-10 text-sm md:text-base">
-                  compras@mecatronixperu.com
+                  contacto@mecatronixperu.com
                 </span>
                 <span
                   className="

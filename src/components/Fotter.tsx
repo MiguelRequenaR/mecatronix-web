@@ -15,18 +15,17 @@ export default function Fotter() {
           <div className="flex flex-col items-center flex-1 gap-1">
             <h3 className="text-primary text-sm md:text-lg font-semibold uppercase">Contactanos</h3>
             <a
-              href="mailto:compras@mecatronixperu.com
-"
+              href="mailto:contacto@mecatronixperu.com"
               className="
                   flex items-center gap-4 group cursor-pointer pb-1 relative w-fit
                   text-gray-600 transition-colors duration-200 font-medium
                   hover:text-primary
                 "
-              aria-label="Enviar correo a compras@mecatronixperu.com"
+              aria-label="Enviar correo a contacto@mecatronixperu.com"
             >
               <Mail className="w-6 h-6 text-primary" />
               <span className="relative text-sm md:text-base z-10">
-                compras@mecatronixperu.com
+                contacto@mecatronixperu.com
               </span>
               <span
                 className="
@@ -67,9 +66,13 @@ export default function Fotter() {
           </div>
           <div className="hidden md:block w-px bg-primary mx-8"></div>
           <div className="flex flex-col items-center flex-1">
-            <h3 className="text-primary text-sm md:text-lg uppercase font-semibold">Horario de atención</h3>
-            <p className="text-gray-600 pt-2 text-sm md:text-base">Lunes a Viernes: 10:00 - 22:00</p>
-            <p className="text-gray-600 text-sm md:text-base">Sábado y Domingo: 10:00 - 20:00</p>
+            <h3 className="text-primary text-sm md:text-lg uppercase font-semibold">Nuestras Redes Sociales</h3>
+            <div className="flex items-center justify-center gap-4 pt-3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png" alt="facebook" className="w-6 h-6 cursor-pointer" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="instagram" className="w-6 h-6 cursor-pointer" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="linkedin" className="w-6 h-6 cursor-pointer" />
+              <img src="https://i.pinimg.com/originals/e4/15/d6/e415d6bd27900cc066d0b8b23a7f1055.png" alt="tiktok" className="w-7 h-7 cursor-pointer" />
+            </div>
           </div>
         </div>
         <hr className="border-primary w-full" />
@@ -139,12 +142,7 @@ export default function Fotter() {
         </div>
         <div className="flex flex-col items-center justify-center gap-4 text-sm">
           <p className="text-gray-600 px-4 text-center md:text-left">2026 ©Todos los derechos reservados. Desarrollado por <a href="https://www.groblestudio.com/" target="_blank" rel="noopener noreferrer" className="text-primary underline">Grobles Studio.</a></p>
-          <div className="flex items-center justify-center gap-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png" alt="facebook" className="w-6 h-6 cursor-pointer" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="instagram" className="w-6 h-6 cursor-pointer" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="linkedin" className="w-6 h-6 cursor-pointer" />
-            <img src="https://i.pinimg.com/originals/e4/15/d6/e415d6bd27900cc066d0b8b23a7f1055.png" alt="tiktok" className="w-7 h-7 cursor-pointer" />
-          </div>
+
         </div>
       </div>
     </footer>
