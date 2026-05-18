@@ -23,12 +23,12 @@ export default function ProjectVideoButton() {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="fixed left-4 top-1/2 z-50 flex w-14 -translate-y-1/2 flex-col items-center justify-center gap-3 rounded-full border border-primary bg-white/95 px-4 py-5 text-center text-xs font-black lett uppercase text-primary shadow-xl shadow-slate-900/10 backdrop-blur transition hover:bg-primary hover:text-white cursor-pointer"
+        className="fixed left-4 top-1/2 z-50 flex w-14 -translate-y-1/2 flex-col items-center justify-center gap-3 rounded-full border border-primary bg-white/95 py-4 text-center text-xs font-black lett uppercase text-primary shadow-xl shadow-slate-900/10 backdrop-blur transition hover:bg-primary hover:text-white cursor-pointer"
         aria-label="Abrir modal de proyectos"
       >
         <h4
           style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
-          className="whitespace-nowrap text-base"
+          className="whitespace-nowrap md:text-base hidden md:block"
         >
           Proyectos
         </h4>
@@ -42,7 +42,7 @@ export default function ProjectVideoButton() {
           aria-modal="true"
           aria-label="Video de proyectos"
         >
-          <div className="relative w-full max-w-7xl mx-auto overflow-hidden rounded-3xl bg-black shadow-2xl">
+          <div className="relative w-full max-w-6xl mx-auto overflow-hidden rounded-3xl bg-black shadow-2xl">
             <button
               type="button"
               onClick={() => setIsOpen(false)}
