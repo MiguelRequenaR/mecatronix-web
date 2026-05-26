@@ -4,7 +4,7 @@ export default function HistorySection() {
     <section className="max-w-7xl mx-auto py-10 md:py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
         <div className="space-y-5 mx-4 md:mx-0" data-aos="fade-up" data-aos-delay="100">
-          <img src="https://i.ibb.co/RGNvg6YF/herohome1.jpg" alt="historia" className="w-full h-[300px] object-cover rounded-3xl border border-gray-100" />
+          <img src="https://i.ibb.co/RGNvg6YF/herohome1.jpg" alt="Historia de Mecatronix Perú - equipo industrial" className="w-full h-[300px] object-cover rounded-3xl border border-gray-100" />
           <h1 className="text-lg md:text-2xl font-bold uppercase text-primary md:mx-4 mx-0">
             ¿Quienes Somos?
           </h1>
@@ -23,7 +23,7 @@ export default function HistorySection() {
             <p className="text-gray-600 text-justify md:mx-4 mx-0 text-sm md:text-base">
               Servicio especializado en el mantenimiento y reparación de equipos industriales, garantizando la eficiencia y continuidad operativa de sus instalaciones.
             </p>
-            <img src="https://i.ibb.co/RpRB9LwR/somosmectronix.jpg" alt="servicio tecnico" className="w-full h-[300px] object-cover rounded-3xl" />
+            <img src="https://i.ibb.co/RpRB9LwR/somosmectronix.jpg" alt="Maquina reparada por el equipo de Mecatronix Perú" className="w-full h-[300px] object-cover rounded-3xl" />
           </div>
           <div className="space-y-3">
             <h2 className="text-lg md:text-2xl font-bold uppercase text-primary mx-4">Misión</h2>
