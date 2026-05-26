@@ -8,7 +8,7 @@ export default function ContactSectionPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 md:px-0">
           <div className="space-y-6" data-aos="fade-up" data-aos-delay="100">
             <span className="text-primary text-sm font-bold uppercase">Contáctanos</span>
-            <h2 className="text-primary text-lg md:text-3xl font-bold uppercase">¿Tienes alguna consulta? Escríbenos</h2>
+            <h1 className="text-primary text-lg md:text-3xl font-bold uppercase">¿Tienes alguna consulta? Escríbenos</h1>
             <p className="text-gray-600 text-sm md:text-base">
               En Mecatronix Perú, estamos comprometidos a brindar la mejor atención y solución a tus necesidades.
             </p>

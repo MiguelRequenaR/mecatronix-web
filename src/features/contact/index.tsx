@@ -10,6 +10,10 @@ export default function Contact() {
         url="https://www.mecatronixperu.com/contacto"
         image="https://www.mecatronixperu.com/ogImageMecatronix.png"
         type="website"
+        breadcrumbs={[
+          {name: "Inicio", url: "https://www.mecatronixperu.com/"},
+          {name: "Contacto", url: "https://www.mecatronixperu.com/contacto"},
+        ]}
       />
       <ContactSectionPage />
     </main>

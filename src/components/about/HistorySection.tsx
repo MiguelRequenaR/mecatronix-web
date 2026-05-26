@@ -5,9 +5,9 @@ export default function HistorySection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
         <div className="space-y-5 mx-4 md:mx-0" data-aos="fade-up" data-aos-delay="100">
           <img src="https://i.ibb.co/RGNvg6YF/herohome1.jpg" alt="historia" className="w-full h-[300px] object-cover rounded-3xl border border-gray-100" />
-          <h2 className="text-lg md:text-2xl font-bold uppercase text-primary md:mx-4 mx-0">
+          <h1 className="text-lg md:text-2xl font-bold uppercase text-primary md:mx-4 mx-0">
             ¿Quienes Somos?
-          </h2>
+          </h1>
           <p className="text-gray-600 md:mx-4 mx-0 text-justify text-sm md:text-base">
             Somos una empresa de servicios que brinda soluciones integrales de servicio de mantenimiento preventivo, predictivo y correctivo, instalación de equipos de panificación, pastelería, gastronomía e industria en general.
             <br /> <br />

@@ -11,6 +11,10 @@ export default function About() {
         url="https://www.mecatronixperu.com/nosotros"
         image="https://www.mecatronixperu.com/ogImageMecatronix.png"
         type="website"
+        breadcrumbs={[
+          {name: "Inicio", url: "https://www.mecatronixperu.com/"},
+          {name: "Nosotros", url: "https://www.mecatronixperu.com/nosotros"},
+        ]}
       />
       <HistorySection />
       <ServiceAbout />

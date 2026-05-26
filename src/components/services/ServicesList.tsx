@@ -7,7 +7,7 @@ export default function ServicesList() {
     <section className="max-w-7xl mx-auto py-10 md:py-20">
       <div className="mx-4 md:mx-0" data-aos="fade-up" data-aos-delay="100">
         <span className="text-primary text-sm font-bold uppercase">Mecatronix Peru</span>
-        <h2 className="text-2xl md:text-3xl font-bold uppercase text-primary">Nuestros Servicios</h2>
+        <h1 className="text-2xl md:text-3xl font-bold uppercase text-primary">Nuestros Servicios</h1>
       </div>
       <hr className="my-8 border-t border-primary mx-4 md:mx-0" data-aos="fade-up" data-aos-delay="300" />
       <div className="space-y-12 mx-4 md:mx-0" data-aos="fade-up" data-aos-delay="400">

@@ -1,16 +1,56 @@
 import { useEffect } from "react";
 
+type Breadcrumb = {
+  name: string;
+  url: string;
+}
+
 type SEOProps = {
   title: string;
   description: string;
   url?: string;
   image?: string;
   type?: string;
+  breadcrumbs?: Breadcrumb[];
 };
 
 const defaultImage = "https://www.mecatronixperu.com/ogImageMecatronix.png";
 const siteName = "Mecatronix Perú";
 const defaultUrl = "https://www.mecatronixperu.com";
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": siteName,
+  "url": defaultUrl,
+  "logo": `${defaultUrl}/iconME.png`,
+  "description": "Empresa peruana especializada en mantenimiento industrial, automatización y soluciones mecatrónicas.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+51-902778456",
+    "contactType": "customer service",
+    "areaServed": "PE"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "PE"
+  }
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": siteName,
+  "image": defaultImage,
+  "description": "Servicios de mantenimiento industrial, automatización y soluciones mecatrónicas en Perú.",
+  "url": defaultUrl,
+  "telephone": "+51-902778456",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "PE"
+  },
+  "priceRange": "$$"
+}
 
 function setMetaTag(name: string, content: string) {
   let element = document.querySelector<HTMLMetaElement>(`meta[name="${name}"]`);
@@ -32,12 +72,25 @@ function setPropertyTag(property: string, content: string) {
   element.setAttribute("content", content);
 }
 
+function injectJsonLd(data: Record<string, unknown>) {
+  const id = `ld-${data["@type"] as string}`;
+  let script = document.querySelector<HTMLScriptElement>(`script[type="application/ld+json"]#${id}`);
+  if (!script) {
+    script = document.createElement("script");
+    script.setAttribute("type", "application/ld+json");
+    script.id = id;
+    document.head.appendChild(script);
+  }
+  script.textContent = JSON.stringify(data);
+}
+
 export default function SEO({
   title,
   description,
   url = defaultUrl,
   image = defaultImage,
   type = "website",
+  breadcrumbs
 }: SEOProps) {
   useEffect(() => {
     document.title = title;
@@ -76,25 +129,39 @@ export default function SEO({
 
     setPropertyTag("og:locale", "es_PE");
 
-    if (type === "article") {
-      const schema = {
+    injectJsonLd(organizationSchema);
+    injectJsonLd(localBusinessSchema);
+
+    if (breadcrumbs && breadcrumbs.length > 0) {
+      injectJsonLd({
         "@context": "https://schema.org",
-        "@type": "Article",
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumbs.map((crumb, i) => ({
+          "@type": "ListItem",
+          "position": i + 1,
+          "name": crumb.name,
+          "item": crumb.url,
+        }))
+      })
+    }
+
+    if (type === "article" || type === "Service") {
+      injectJsonLd({
+        "@context": "https://schema.org",
+        "@type": type === "article" ? "Article" : "Servicio",
         "headline": title,
         "description": description,
         "image": image,
+        "url": url,
+        "provider": {
+          "@type": "Organization",
+          "name": siteName,
+          "url": defaultUrl,
+        },
         "datePublished": new Date().toISOString(),
-      };
-
-      let script = document.querySelector('script[type="application/ld+json"]');
-      if (!script) {
-        script = document.createElement("script");
-        script.setAttribute("type", "application/ld+json");
-        document.head.appendChild(script);
-      }
-      script.textContent = JSON.stringify(schema);
+      });
     }
-  }, [title, description, url, image, type]);
+  }, [title, description, url, image, type, breadcrumbs]);
 
   return null;
 }

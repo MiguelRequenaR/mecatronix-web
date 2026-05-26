@@ -33,6 +33,10 @@ export default function ComplaintsBookPage() {
         url="https://www.mecatronixperu.com/libro-de-reclamaciones"
         image="https://www.mecatronixperu.com/ogImageMecatronix.png"
         type="website"
+        breadcrumbs={[
+          {name: "Inicio", url: "https://www.mecatronixperu.com/"},
+          {name: "Libro de Reclamaciones", url: "https://www.mecatronixperu.com/libro-de-reclamaciones"}
+        ]}
       />
       <section className="max-w-4xl mx-auto px-6 py-10 md:py-20 text-gray-700">
         <h1 className="text-3xl md:text-4xl font-bold text-primary uppercase mb-4 text-center md:text-left" data-aos="fade-up">

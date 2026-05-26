@@ -9,6 +9,10 @@ export default function PrivacyPolicyPage() {
         url="https://www.mecatronixperu.com/politica-de-privacidad"
         image="https://www.mecatronixperu.com/ogImageMecatronix.png"
         type="website"
+        breadcrumbs={[
+          {name: "Inicio", url: "https://www.mecatronixperu.com/"},
+          {name: "Política de Privacidad", url: "https://www.mecatronixperu.com/politica-de-privacidad"}
+        ]}
       />
       <section className="max-w-4xl mx-auto px-6 py-10 md:py-20 text-gray-700">
         <h1 className="text-3xl md:text-4xl font-bold text-primary uppercase mb-10 text-center md:text-left" data-aos="fade-up">

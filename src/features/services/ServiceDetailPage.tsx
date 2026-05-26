@@ -53,7 +53,12 @@ export default function ServiceDetailPage() {
           description={service.description ?? service.longDescription ?? "Servicio industrial especializado de Mecatronix Perú."}
           url={canonicalUrl}
           image={service.image}
-          type="article"
+          type="service"
+          breadcrumbs={[
+            {name: "Inicio", url: "https://www.mecatronixperu.com/"},
+            {name: "Servicios", url: "https://www.mecatronixperu.com/servicios"},
+            {name: service.title, url: canonicalUrl},
+          ]}
         />
       ) : null}
       <main key={service.slug}>

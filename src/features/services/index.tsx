@@ -11,6 +11,10 @@ export default function ServicesPage() {
         url="https://www.mecatronixperu.com/servicios"
         image="https://www.mecatronixperu.com/ogImageMecatronix.png"
         type="website"
+        breadcrumbs={[
+          {name: "Inicio", url: "https://www.mecatronixperu.com/"},
+          {name: "Servicios", url: "https://www.mecatronixperu.com/servicios"},
+        ]}
       />
       <ServicesList />
       <ContactSectionService />

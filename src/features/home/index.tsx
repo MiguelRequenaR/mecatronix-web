@@ -13,6 +13,10 @@ export default function Home() {
         url="https://www.mecatronixperu.com"
         image="https://www.mecatronixperu.com/ogImageMecatronix.png"
         type="website"
+        breadcrumbs={[{
+          name: "Inicio",
+          url: "https://www.mecatronixperu.com/"
+        }]}
       />
       <HeroHome />
       <FeaturesSection />
