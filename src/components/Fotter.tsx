@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin } from "lucide-react"
 import { Link } from "react-router-dom"
 import logoMecatronix from "/mecatronixLogoWB.png"
+import { FacebookIcon, InstagramIcon, LinkedInIcon, TikTokIcon } from "@/components/SocialIcons"
 
 export default function Fotter() {
   return (
@@ -8,7 +9,22 @@ export default function Fotter() {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-center">
           <hr className="border-primary w-full" />
-          <img src={logoMecatronix} alt="Mecatronix Perú - Logo" className="w-[400px] h-auto" />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet="/images/logo/mecatronixLogo-400.webp 400w, /images/logo/mecatronixLogo-800.webp 800w"
+              sizes="400px"
+            />
+            <img
+              src={logoMecatronix}
+              alt="Mecatronix Perú - Logo"
+              width={400}
+              height={91}
+              loading="lazy"
+              decoding="async"
+              className="w-[400px] h-auto"
+            />
+          </picture>
           <hr className="border-primary w-full" />
         </div>
         <div className="flex flex-col md:flex-row justify-center items-stretch text-center py-10 space-y-10 md:space-y-0">
@@ -68,14 +84,18 @@ export default function Fotter() {
           <div className="flex flex-col items-center flex-1">
             <h3 className="text-primary text-sm md:text-lg uppercase font-semibold">Nuestras Redes Sociales</h3>
             <div className="flex items-center justify-center gap-4 pt-3">
-              <a href="https://www.facebook.com/profile.php?id=100063068537205&locale=bg_BG#" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png" alt="Facebook de Mecatronix Perú" className="w-6 h-6 cursor-pointer" />
+              <a href="https://www.facebook.com/profile.php?id=100063068537205&locale=bg_BG#" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Mecatronix Perú">
+                <FacebookIcon className="w-6 h-6 cursor-pointer" />
               </a>
-              <a href="https://www.instagram.com/mecatronixperu/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram de Mecatronix Perú" className="w-6 h-6 cursor-pointer" />
+              <a href="https://www.instagram.com/mecatronixperu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Mecatronix Perú">
+                <InstagramIcon className="w-6 h-6 cursor-pointer" />
               </a>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="LinkedIn de Mecatronix Perú" className="w-6 h-6 cursor-pointer" />
-              <img src="https://i.pinimg.com/originals/e4/15/d6/e415d6bd27900cc066d0b8b23a7f1055.png" alt="TikTok de Mecatronix Perú" className="w-7 h-7 cursor-pointer" />
+              <a href="https://www.linkedin.com/in/mecatronix-peru/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Mecatronix Perú">
+                <LinkedInIcon className="w-6 h-6 cursor-pointer" />
+              </a>
+              <a href="https://www.tiktok.com/@mecatronixperu" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Mecatronix Perú">
+                <TikTokIcon className="w-7 h-7 cursor-pointer" size={28} />
+              </a>
             </div>
           </div>
         </div>

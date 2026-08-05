@@ -4,7 +4,22 @@ export default function HistorySection() {
     <section className="max-w-7xl mx-auto py-10 md:py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
         <div className="space-y-5 mx-4 md:mx-0" data-aos="fade-up" data-aos-delay="100">
-          <img src="https://i.ibb.co/RGNvg6YF/herohome1.jpg" alt="Historia de Mecatronix Perú - equipo industrial" className="w-full h-[300px] object-cover rounded-3xl border border-gray-100" />
+          <picture>
+            <source
+              type="image/webp"
+              srcSet="/images/hero/herohome1-768.webp 768w, /images/hero/herohome1-1200.webp 1200w"
+              sizes="(min-width: 768px) 50vw, 100vw"
+            />
+            <img
+              src="https://i.ibb.co/RGNvg6YF/herohome1.jpg"
+              alt="Historia de Mecatronix Perú - equipo industrial"
+              width={1200}
+              height={628}
+              loading="lazy"
+              decoding="async"
+              className="w-full h-[300px] object-cover rounded-3xl border border-gray-100"
+            />
+          </picture>
           <h1 className="text-lg md:text-2xl font-bold uppercase text-primary md:mx-4 mx-0">
             ¿Quienes Somos?
           </h1>
@@ -23,7 +38,22 @@ export default function HistorySection() {
             <p className="text-gray-600 text-justify md:mx-4 mx-0 text-sm md:text-base">
               Servicio especializado en el mantenimiento y reparación de equipos industriales, garantizando la eficiencia y continuidad operativa de sus instalaciones.
             </p>
-            <img src="https://i.ibb.co/RpRB9LwR/somosmectronix.jpg" alt="Maquina reparada por el equipo de Mecatronix Perú" className="w-full h-[300px] object-cover rounded-3xl" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/images/other/somosmectronix-480.webp 480w, /images/other/somosmectronix-768.webp 768w, /images/other/somosmectronix-1200.webp 1200w"
+                sizes="(min-width: 768px) 50vw, 100vw"
+              />
+              <img
+                src="https://i.ibb.co/RpRB9LwR/somosmectronix.jpg"
+                alt="Maquina reparada por el equipo de Mecatronix Perú"
+                width={1200}
+                height={1600}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-[300px] object-cover rounded-3xl"
+              />
+            </picture>
           </div>
           <div className="space-y-3">
             <h2 className="text-lg md:text-2xl font-bold uppercase text-primary mx-4">Misión</h2>

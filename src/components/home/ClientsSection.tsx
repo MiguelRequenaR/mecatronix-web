@@ -28,6 +28,9 @@ const clients = [
   {
     id: 6,
     image: "https://i.ibb.co/Q38nXBxs/logo1.jpg",
+    imageBase: "other/logo1",
+    width: 169,
+    height: 83,
     name: "Tortatti"
   },
   {
@@ -98,12 +101,30 @@ export default function ClientsSection() {
               key={client.id}
               className="flex h-24 w-36 shrink-0 items-center justify-center md:h-28 md:w-44"
             >
-              <img
-                src={client.image}
-                alt={client.name}
-                title={client.name}
-                className="max-h-full max-w-full object-contain"
-              />
+              {client.imageBase ? (
+                <picture>
+                  <source type="image/webp" srcSet={`/images/${client.imageBase}-169.webp 169w`} />
+                  <img
+                    src={client.image}
+                    alt={client.name}
+                    title={client.name}
+                    width={client.width}
+                    height={client.height}
+                    loading="lazy"
+                    decoding="async"
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </picture>
+              ) : (
+                <img
+                  src={client.image}
+                  alt={client.name}
+                  title={client.name}
+                  loading="lazy"
+                  decoding="async"
+                  className="max-h-full max-w-full object-contain"
+                />
+              )}
             </div>
           ))}
           {clients.map((client) => (
@@ -112,12 +133,30 @@ export default function ClientsSection() {
               className="flex h-24 w-36 shrink-0 items-center justify-center md:h-28 md:w-44"
               aria-hidden
             >
-              <img
-                src={client.image}
-                alt=""
-                title={client.name}
-                className="max-h-full max-w-full object-contain"
-              />
+              {client.imageBase ? (
+                <picture>
+                  <source type="image/webp" srcSet={`/images/${client.imageBase}-169.webp 169w`} />
+                  <img
+                    src={client.image}
+                    alt=""
+                    title={client.name}
+                    width={client.width}
+                    height={client.height}
+                    loading="lazy"
+                    decoding="async"
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </picture>
+              ) : (
+                <img
+                  src={client.image}
+                  alt=""
+                  title={client.name}
+                  loading="lazy"
+                  decoding="async"
+                  className="max-h-full max-w-full object-contain"
+                />
+              )}
             </div>
           ))}
         </div>

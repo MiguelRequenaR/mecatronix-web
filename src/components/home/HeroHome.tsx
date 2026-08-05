@@ -4,31 +4,46 @@ import { ArrowRight, ArrowLeft } from "lucide-react"
 const carouselImages = [
   {
     id: 1,
-    image: "https://i.ibb.co/RGNvg6YF/herohome1.jpg",
+    base: "hero/herohome1",
+    fallback: "https://i.ibb.co/RGNvg6YF/herohome1.jpg",
+    width: 1200,
+    height: 628,
     title: "Especialistas en Equipos \nAlimentarios",
     description: "Proteja su inversión y evite interrupciones en su producción. Más de 15 años de experiencia en equipos de panadería, pastelería y horeca."
   },
   {
     id: 2,
-    image: "https://bivelectrics.cl/wp-content/uploads/2020/11/mantenimiento.jpg",
+    base: null,
+    fallback: "https://bivelectrics.cl/wp-content/uploads/2020/11/mantenimiento.jpg",
+    width: 1200,
+    height: 800,
     title: "Mantenimiento \nIndustrial",
     description: "Garantizamos la máxima disponibilidad de su planta mediante estrategias preventivas y correctivas integrales, minimizando los tiempos de inactividad de su maquinaria.",
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1717386255773-a456c611dc4e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    base: null,
+    fallback: "https://images.unsplash.com/photo-1717386255773-a456c611dc4e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    width: 1470,
+    height: 980,
     title: "Automatización \nIndustrial",
     description: "Modernizamos sus líneas de producción con sistemas de control inteligente. Aumente la eficiencia, reduzca errores y optimice sus procesos operativos al máximo.",
   },
   {
     id: 4,
-    image: "https://i.ibb.co/rGDp1Hrw/solucionesmecatronicas.png",
+    base: "hero/solucionesmecatronicas",
+    fallback: "https://i.ibb.co/rGDp1Hrw/solucionesmecatronicas.png",
+    width: 1203,
+    height: 941,
     title: "Soluciones \nMecatrónicas",
     description: "Desarrollamos e integramos sistemas electroneumáticos y servocontrolados a medida, logrando una sinergia perfecta entre mecánica, electrónica y software.",
   },
   {
     id: 5,
-    image: "https://i.ibb.co/TM70q1pQ/solucioneselectronicas.jpg",
+    base: "hero/solucioneselectronicas",
+    fallback: "https://i.ibb.co/TM70q1pQ/solucioneselectronicas.jpg",
+    width: 1204,
+    height: 1600,
     title: "Soluciones \nEléctricas",
     description: "Diseño, montaje y puesta en marcha de tableros de automatización, control de motores con variadores de frecuencia y sistemas de fuerza para la industria.",
   },
@@ -73,12 +88,36 @@ export default function HeroHome() {
             key={slide.id}
             className="relative w-full h-full shrink-0"
           >
-            <img
-              src={slide.image}
-              alt={slide.title}
-              className="absolute inset-0 w-full h-full object-cover"
-              loading={slide.id === 1 ? "eager" : "lazy"}
-            />
+            {slide.base ? (
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={slide.id === 1 ? `/images/${slide.base}-768.webp 768w, /images/${slide.base}-1200.webp 1200w` : `/images/${slide.base}-768.webp 768w, /images/${slide.base}-${slide.width}.webp ${slide.width}w`}
+                  sizes="100vw"
+                />
+                <img
+                  src={slide.fallback}
+                  alt={slide.title}
+                  width={slide.width}
+                  height={slide.height}
+                  className="absolute inset-0 w-full h-full object-cover"
+                  loading={slide.id === 1 ? "eager" : "lazy"}
+                  decoding="async"
+                  fetchPriority={slide.id === 1 ? "high" : "auto"}
+                />
+              </picture>
+            ) : (
+              <img
+                src={slide.fallback}
+                alt={slide.title}
+                width={slide.width}
+                height={slide.height}
+                className="absolute inset-0 w-full h-full object-cover"
+                loading={slide.id === 1 ? "eager" : "lazy"}
+                decoding="async"
+                fetchPriority={slide.id === 1 ? "high" : "auto"}
+              />
+            )}
             <div className="absolute inset-0 bg-black/40"></div>
 
             <div className="relative z-10 flex justify-center w-full h-full" data-aos="fade-up">

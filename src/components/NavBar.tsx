@@ -28,7 +28,22 @@ export default function NavBar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center py-2 px-4 md:px-0">
         <div>
           <Link to="/" aria-label="Ir al inicio">
-            <img src={logoMecatronix} alt="Mecatronix Perú - Logo" className="w-[200px] md:w-[300px] h-auto" />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/images/logo/mecatronixLogo-400.webp 400w, /images/logo/mecatronixLogo-800.webp 800w"
+                sizes="(min-width: 768px) 300px, 200px"
+              />
+              <img
+                src={logoMecatronix}
+                alt="Mecatronix Perú - Logo"
+                width={300}
+                height={68}
+                decoding="async"
+                fetchPriority="high"
+                className="w-[200px] md:w-[300px] h-auto"
+              />
+            </picture>
           </Link>
         </div>
 

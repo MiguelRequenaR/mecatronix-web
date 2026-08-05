@@ -9,6 +9,9 @@ export type ServiceFeature = {
 export type Service = {
   id: number
   image: string
+  imageBase?: string
+  imageWidth?: number
+  imageHeight?: number
   title: string
   gallery: string[]
   slug: string
@@ -21,6 +24,9 @@ const services: Service[] = [
   {
     id: 1,
     image: "https://i.ibb.co/mCVTx2qM/mantenimientopreventivo.jpg",
+    imageBase: "services/mantenimientopreventivo",
+    imageWidth: 1600,
+    imageHeight: 1200,
     gallery: [
       "https://i.ibb.co/mCVTx2qM/mantenimientopreventivo.jpg",
       "https://i.ibb.co/qMVWNTB0/preventivo7.jpg",
@@ -57,6 +63,9 @@ const services: Service[] = [
   {
     id: 2,
     image: "https://i.ibb.co/wZg90368/mantenimientopredictivo.jpg",
+    imageBase: "services/mantenimientopredictivo",
+    imageWidth: 1500,
+    imageHeight: 840,
     gallery: [
 
     ],
@@ -86,6 +95,9 @@ const services: Service[] = [
   {
     id: 3,
     image: "https://i.ibb.co/yBf5b7Rz/mantenimientocorrectivo.jpg",
+    imageBase: "services/mantenimientocorrectivo",
+    imageWidth: 721,
+    imageHeight: 1600,
     gallery: [
       "https://i.ibb.co/yBf5b7Rz/mantenimientocorrectivo.jpg",
       "https://i.ibb.co/7xqdRwKJ/correctivo1.jpg",
@@ -122,6 +134,9 @@ const services: Service[] = [
   {
     id: 4,
     image: "https://i.ibb.co/Rk4j8y7b/auxilioindustrial.jpg",
+    imageBase: "services/auxilioindustrial",
+    imageWidth: 728,
+    imageHeight: 713,
     gallery: [
       "https://i.ibb.co/Rk4j8y7b/auxilioindustrial.jpg",
       "https://i.ibb.co/DD5TL1JV/auxilio6.jpg",

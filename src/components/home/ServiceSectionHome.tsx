@@ -20,10 +20,34 @@ export default function ServiceSectionHome() {
           >
             <div className="flex flex-col md:flex-row gap-5 rounded-lg items-stretch">
               <div className="overflow-hidden rounded-2xl w-full h-56 md:w-80 md:h-[300px] shrink-0">
-                <img
-                  src={service.image}
-                  className="transition-transform duration-300 group-hover:scale-110 w-full h-full object-cover"
-                />
+                {service.imageBase ? (
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcSet={`/images/${service.imageBase}-320.webp 320w, /images/${service.imageBase}-480.webp 480w, /images/${service.imageBase}-640.webp 640w`}
+                      sizes="(min-width: 768px) 320px, 100vw"
+                    />
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      width={service.imageWidth ?? 1600}
+                      height={service.imageHeight ?? 1200}
+                      loading="lazy"
+                      decoding="async"
+                      className="transition-transform duration-300 group-hover:scale-110 w-full h-full object-cover"
+                    />
+                  </picture>
+                ) : (
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    width={service.imageWidth ?? 1600}
+                    height={service.imageHeight ?? 1200}
+                    loading="lazy"
+                    decoding="async"
+                    className="transition-transform duration-300 group-hover:scale-110 w-full h-full object-cover"
+                  />
+                )}
               </div>
               <div className="flex flex-col flex-1 space-y-5">
                 <h3 className="text-lg text-white uppercase font-bold pt-4 md:pt-4">{service.title}</h3>
